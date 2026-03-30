@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkte — SORA Korean Skincare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+        <nav class="nav-left">
+            <a href="products.html" class="active">Produkte</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <a href="index.html" class="logo">SORA</a>
+        <div class="nav-right">
+            <span class="tagline">Korean Skincare</span>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero__text">
+            <p class="hero-eyebrow">전체 제품 — Alle Produkte</p>
+            <h1>Unser<br /><em>Sortiment</em></h1>
+        </div>
+        <div class="page-hero__deco">
+            <div class="deco-ring deco-ring--1"></div>
+            <div class="deco-ring deco-ring--2"></div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTER -->
+    <section class="filter-bar">
+        <div class="filter-inner">
+            <span class="filter-label">Filtern:</span>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-cat="all">Alle</button>
+                <button class="filter-btn" data-cat="cleanser">Cleanser</button>
+                <button class="filter-btn" data-cat="toner">Toner</button>
+                <button class="filter-btn" data-cat="serum">Serum & Essenz</button>
+                <button class="filter-btn" data-cat="mask">Masken</button>
+                <button class="filter-btn" data-cat="moisturizer">Creme</button>
+                <button class="filter-btn" data-cat="spf">Sonnenschutz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section class="section products-section">
+        <div class="products-grid products-grid--full" id="products-grid">
+
+            <!-- 1 -->
+            <article class="product-card" data-cat="serum" id="snail-mucin">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500&q=80" alt="Snail Mucin Essence" />
+                    <span class="product-badge">Bestseller</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">COSRX</span>
+                    <h3 class="product-name">Advanced Snail 96 Mucin Power Essence</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.90</span>
+                        <button class="btn-ghost open-detail" data-id="1">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="product-card" data-cat="toner" id="miracle-toner">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="AHA BHA Toner" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Some By Mi</span>
+                    <h3 class="product-name">AHA·BHA·PHA 30 Days Miracle Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 19.50</span>
+                        <button class="btn-ghost open-detail" data-id="2">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="product-card" data-cat="mask" id="nmf-mask">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=500&q=80" alt="Sheet Mask" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Mediheal</span>
+                    <h3 class="product-name">N.M.F Aquaring Ampoule Mask</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 3.90</span>
+                        <button class="btn-ghost open-detail" data-id="3">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="product-card" data-cat="spf" id="sunscreen">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Sunscreen" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Purito</span>
+                    <h3 class="product-name">Daily Go-To Sunscreen SPF50+</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 22.00</span>
+                        <button class="btn-ghost open-detail" data-id="4">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="product-card" data-cat="cleanser">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80" alt="Low pH Cleanser" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">COSRX</span>
+                    <h3 class="product-name">Low pH Good Morning Gel Cleanser</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 16.80</span>
+                        <button class="btn-ghost open-detail" data-id="5">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="product-card" data-cat="moisturizer">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=500&q=80" alt="Moisturizer" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Laneige</span>
+                    <h3 class="product-name">Water Sleeping Mask</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 34.00</span>
+                        <button class="btn-ghost open-detail" data-id="6">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="product-card" data-cat="serum">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Vitamin C Serum" />
+                    <span class="product-badge">Beliebt</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Klairs</span>
+                    <h3 class="product-name">Freshly Juiced Vitamin C Drop Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 29.90</span>
+                        <button class="btn-ghost open-detail" data-id="7">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="product-card" data-cat="toner">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="Toner" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Pyunkang Yul</span>
+                    <h3 class="product-name">Essence Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 21.00</span>
+                        <button class="btn-ghost open-detail" data-id="8">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 9 -->
+            <article class="product-card" data-cat="mask">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80" alt="Clay Mask" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Innisfree</span>
+                    <h3 class="product-name">Super Volcanic Pore Clay Mask</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 18.50</span>
+                        <button class="btn-ghost open-detail" data-id="9">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 10 -->
+            <article class="product-card" data-cat="cleanser">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=500&q=80" alt="Cleansing Balm" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Heimish</span>
+                    <h3 class="product-name">All Clean Balm — Sherbet Texture</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 17.90</span>
+                        <button class="btn-ghost open-detail" data-id="10">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 11 -->
+            <article class="product-card" data-cat="moisturizer">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=500&q=80" alt="Cream" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">COSRX</span>
+                    <h3 class="product-name">Balancing Water Gel Moisturizer</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 26.00</span>
+                        <button class="btn-ghost open-detail" data-id="11">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 12 -->
+            <article class="product-card" data-cat="serum">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=500&q=80" alt="Niacinamide Serum" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Some By Mi</span>
+                    <h3 class="product-name">Niacinamide 10% Zinc Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 22.90</span>
+                        <button class="btn-ghost open-detail" data-id="12">Details</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modal-close" aria-label="Schliessen">✕</button>
+        <div class="modal-inner">
+
+            <div class="modal-media">
+                <img id="modal-img" src="" alt="" />
+                <div class="modal-video-wrap" id="modal-video-wrap">
+                    <iframe id="modal-video" src="" title="Produktvideo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="modal-info">
+                <span class="product-brand" id="modal-brand"></span>
+                <h2 id="modal-title"></h2>
+                <span class="modal-price" id="modal-price"></span>
+
+                <div class="modal-desc" id="modal-desc"></div>
+
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags" id="modal-ingredients"></div>
+                </div>
+
+                <form class="order-form" id="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name">Vor- & Nachname</label>
+                            <input type="text" id="order-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email">E-Mail</label>
+                            <input type="email" id="order-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address">Lieferadresse</label>
+                            <input type="text" id="order-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty">Anzahl</label>
+                            <input type="number" id="order-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note">Bemerkung</label>
+                            <input type="text" id="order-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" id="order-product" name="product" value="" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <span class="logo">SORA</span>
+            <p>Kuratiertes K-Beauty<br />aus Seoul — für die Schweiz.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Shop</h4>
+            <a href="products.html">Alle Produkte</a>
+            <a href="products.html?cat=serum">Seren</a>
+            <a href="products.html?cat=mask">Masken</a>
+            <a href="products.html?cat=spf">Sonnenschutz</a>
+        </div>
+        <div class="footer-links">
+            <h4>Info</h4>
+            <a href="contact.html">Über uns</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="#">Versand & Rückgabe</a>
+            <a href="#">Datenschutz</a>
+        </div>
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Bleib informiert über neue Produkte & Aktionen.</p>
+            <a href="index.html#newsletter" class="btn-ghost btn-sm">Jetzt anmelden</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2025 SORA Korean Skincare</span>
+        <span>Made with 💛 in Zürich</span>
+    </div>
+</footer>
+
+<script>
+    // ── Product data ──────────────────────────────────────────────────────────
+    const products = {
+        1: {
+            brand: 'COSRX',
+            name: 'Advanced Snail 96 Mucin Power Essence',
+            price: 'CHF 24.90',
+            img: 'https://images.unsplash.com/photo-1617897903246-719242758050?w=700&q=80',
+            video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+            desc: 'Die Advanced Snail 96 Mucin Power Essence von COSRX enthält 96% Schneckensekret-Filtrat und ist das meistverkaufte K-Beauty Serum weltweit. Sie stärkt die Hautbarriere, reduziert Rötungen und spendet langanhaltende Feuchtigkeit – für sichtbar glattere, strahlende Haut.',
+            ingredients: ['Snail Secretion Filtrate 96%', 'Betaine', 'Sodium Hyaluronate']
+        },
+        2: {
+            brand: 'Some By Mi',
+            name: 'AHA·BHA·PHA 30 Days Miracle Toner',
+            price: 'CHF 19.50',
+            img: 'https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=700&q=80',
+            video: '',
+            desc: 'Der Miracle Toner kombiniert drei Exfoliationssäuren (AHA, BHA, PHA) für eine effektive und gleichzeitig schonende Hauterneuerung. Bereits nach 30 Tagen regelmässiger Anwendung ist das Hautbild sichtbar ebenmässiger und die Poren wirken verfeinert.',
+            ingredients: ['AHA (Glycolsäure)', 'BHA (Salicylsäure)', 'PHA (Gluconolacton)', 'Tea Tree Extract']
+        },
+        3: {
+            brand: 'Mediheal',
+            name: 'N.M.F Aquaring Ampoule Mask',
+            price: 'CHF 3.90',
+            img: 'https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=700&q=80',
+            video: '',
+            desc: 'Koreas meistverkaufte Tuchmaske liefert in nur 20 Minuten einen kräftigen Feuchtigkeitsschub. Das N.M.F (Natural Moisturizing Factor) Komplex imitiert die natürliche Feuchtigkeitsversorgung der Haut und macht sie sofort weich und strahlend.',
+            ingredients: ['Sodium Hyaluronate', 'Betaine', 'Glycerin', 'Allantoin']
+        },
+        4: {
+            brand: 'Purito',
+            name: 'Daily Go-To Sunscreen SPF50+',
+            price: 'CHF 22.00',
+            img: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=700&q=80',
+            video: '',
+            desc: 'Dieser leichte Sonnenschutz mit LSF 50+ hinterlässt keinen weissen Schleier und lässt sich perfekt als letzter Schritt in die Pflegeroutine integrieren. Dank der dünnflüssigen Textur trocknet er schnell ab und ist ideal unter Make-up.',
+            ingredients: ['Zinc Oxide', 'Niacinamide', 'Centella Asiatica', 'Panthenol']
+        },
+        5: {
+            brand: 'COSRX',
+            name: 'Low pH Good Morning Gel Cleanser',
+            price: 'CHF 16.80',
+            img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=700&q=80',
+            video: '',
+            desc: 'Dieser pH-optimierte Morgenreiniger (pH 5.0) entfernt sanft Talg und Verunreinigungen ohne die Hautbarriere zu stören. Mit Teebaumöl und Salicylsäure wirkt er porenverfeinernder und antibakteriell – ideal für Mischhaut und unreine Haut.',
+            ingredients: ['Salicylic Acid 0.5%', 'Tea Tree Oil', 'Xanthan Gum']
+        },
+        6: {
+            brand: 'Laneige',
+            name: 'Water Sleeping Mask',
+            price: 'CHF 34.00',
+            img: 'https://images.unsplash.com/photo-1601049541271-25cf92149661?w=700&q=80',
+            video: '',
+            desc: 'Die ikonische Schlafmaske von Laneige bildet über Nacht einen atmungsaktiven Feuchtigkeitsfilm auf der Haut. Morgens erwacht man mit sichtbar praller, strahlendem Teint. Besonders für trockene und gestresste Haut ein absoluter Gamechanger.',
+            ingredients: ['WATER SLEEPING™ Technology', 'Sleepscent™', 'Mineral Water', 'Apricot Extract']
+        },
+        7: {
+            brand: 'Klairs',
+            name: 'Freshly Juiced Vitamin C Drop Serum',
+            price: 'CHF 29.90',
+            img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=700&q=80',
+            video: '',
+            desc: 'Das 5% Vitamin C Serum von Klairs ist mild genug für empfindliche Haut und trotzdem hochwirksam. Es hellt Pigmentflecken auf, schützt vor freien Radikalen und verleiht dem Teint ein gesundes Glow. Ideal für den Einstieg in Vitamin-C-Pflege.',
+            ingredients: ['Ascorbic Acid 5%', 'Sodium Hyaluronate', 'Squalane']
+        },
+        8: {
+            brand: 'Pyunkang Yul',
+            name: 'Essence Toner',
+            price: 'CHF 21.00',
+            img: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=700&q=80',
+            video: '',
+            desc: 'Der Essence Toner von Pyunkang Yul enthält satte 91.3% Astragalus Membranaceus Root Extract – bekannt für seine hautstärkenden und feuchtigkeitsbindenden Eigenschaften. Die ölige Textur nährt die Haut intensiv, ohne zu fetten.',
+            ingredients: ['Astragalus Root Extract 91.3%', 'Glycerin', 'Butylene Glycol']
+        },
+        9: {
+            brand: 'Innisfree',
+            name: 'Super Volcanic Pore Clay Mask',
+            price: 'CHF 18.50',
+            img: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=80',
+            video: '',
+            desc: 'Die porenreinigende Vulkan-Ton-Maske von Innisfree nutzt natürlichen Vulkanascheextrakt aus Jeju Island, um Talg zu absorbieren und Poren sichtbar zu verfeinern. 2x wöchentlich anwenden für glattere, mattierte Haut.',
+            ingredients: ['Jeju Volcanic Ash', 'Kaolin', 'Silica', 'Glycerin']
+        },
+        10: {
+            brand: 'Heimish',
+            name: 'All Clean Balm — Sherbet Texture',
+            price: 'CHF 17.90',
+            img: 'https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80',
+            video: '',
+            desc: 'Dieses Reinigungsbalm in Sherbet-Textur schmilzt beim Auftragen zu einem seidigen Öl und löst selbst wasserfestes Make-up, Sonnencreme und Umweltverschmutzung rückstandslos auf. Die perfekte erste Reinigung für Double Cleansing.',
+            ingredients: ['White Lotus Extract', 'Sweet Almond Oil', 'Vitamin E', 'Bergamot Oil']
+        },
+        11: {
+            brand: 'COSRX',
+            name: 'Balancing Water Gel Moisturizer',
+            price: 'CHF 26.00',
+            img: 'https://images.unsplash.com/photo-1527799820374-87036083acf8?w=700&q=80',
+            video: '',
+            desc: 'Dieser leichte Wassergelcreme reguliert den Feuchtigkeitshaushalt der Haut und hinterlässt ein frisches, nicht fettiges Hautgefühl. Mit Birch-Extrakt und Hyaluronsäure für langanhaltende Hydration – ideal für Mischhaut.',
+            ingredients: ['Birch Juice 71.6%', 'Sodium Hyaluronate', 'Beta-Glucan']
+        },
+        12: {
+            brand: 'Some By Mi',
+            name: 'Niacinamide 10% Zinc Serum',
+            price: 'CHF 22.90',
+            img: 'https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=700&q=80',
+            video: '',
+            desc: 'Das hochkonzentrierte Niacinamid-Serum mit Zink minimiert Poren, reguliert Talgproduktion und hellt gleichzeitig Pigmentflecken auf. Ein Multitalent für unreine, ölige oder fahle Haut – gut verträglich und dermatologisch getestet.',
+            ingredients: ['Niacinamide 10%', 'Zinc PCA', 'Panthenol', 'Allantoin']
+        }
+    };
+
+    // ── Filter logic ──────────────────────────────────────────────────────────
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#products-grid .product-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const cat = btn.dataset.cat;
+            cards.forEach(card => {
+                card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+            });
+        });
+    });
+
+    // ── URL param filter ──────────────────────────────────────────────────────
+    const params = new URLSearchParams(window.location.search);
+    const catParam = params.get('cat');
+    if (catParam) {
+        const matchBtn = document.querySelector(`.filter-btn[data-cat="${catParam}"]`);
+        if (matchBtn) matchBtn.click();
+    }
+
+    // ── Modal logic ───────────────────────────────────────────────────────────
+    const overlay = document.getElementById('modal-overlay');
+    const modal = document.getElementById('product-modal');
+    const closeBtn = document.getElementById('modal-close');
+
+    function openModal(id) {
+        const p = products[id];
+        if (!p) return;
+        document.getElementById('modal-img').src = p.img;
+        document.getElementById('modal-img').alt = p.name;
+        document.getElementById('modal-brand').textContent = p.brand;
+        document.getElementById('modal-title').textContent = p.name;
+        document.getElementById('modal-price').textContent = p.price;
+        document.getElementById('modal-desc').textContent = p.desc;
+        document.getElementById('order-product').value = p.name;
+
+        const tags = document.getElementById('modal-ingredients');
+        tags.innerHTML = p.ingredients.map(i => `<span class="ingredient-tag">${i}</span>`).join('');
+
+        const videoWrap = document.getElementById('modal-video-wrap');
+        const videoEl = document.getElementById('modal-video');
+        if (p.video) {
+            videoEl.src = p.video;
+            videoWrap.style.display = 'block';
+        } else {
+            videoEl.src = '';
+            videoWrap.style.display = 'none';
+        }
+
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        document.getElementById('modal-video').src = '';
+    }
+
+    document.querySelectorAll('.open-detail').forEach(btn => {
+        btn.addEventListener('click', () => openModal(btn.dataset.id));
+    });
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    // ── Order form submit ─────────────────────────────────────────────────────
+    document.getElementById('order-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.innerHTML = '<div class="order-success"><span>✓</span><p>Bestellung eingegangen!<br/>Wir melden uns per E-Mail.</p></div>';
+    });
+</script>
+
+</body>
+</html>
