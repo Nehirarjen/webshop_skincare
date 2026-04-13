@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marken — SORA Korean Skincare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+        <nav class="nav-left">
+            <a href="products.html">Produkte</a>
+            <a href="brands.html" class="active">Marken</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <a href="index.html" class="logo">SORA</a>
+        <div class="nav-right">
+            <span class="tagline">Korean Skincare</span>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- Anchor for scroll and modal close -->
+    <div id="products"></div>
+
+    <!-- Anchor for scroll -->
+    <div id="brands"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero__text">
+            <p class="hero-eyebrow">브랜드 — Marken</p>
+            <h1>Unsere<br /><em>Brands</em></h1>
+        </div>
+        <div class="page-hero__deco">
+            <div class="deco-ring deco-ring--1"></div>
+            <div class="deco-ring deco-ring--2"></div>
+        </div>
+    </section>
+
+    <!-- BRAND FILTER -->
+    <section class="filter-bar">
+        <div class="filter-inner">
+            <span class="filter-label">Marke:</span>
+            <div class="filter-buttons">
+                <a href="#brands" class="filter-btn active">Alle</a>
+                <a href="#torriden" class="filter-btn">Torriden</a>
+                <a href="#beautyofjoseon" class="filter-btn">Beauty of Joseon</a>
+                <a href="#medicube" class="filter-btn">Medicube</a>
+                <a href="#anua" class="filter-btn">ANUA</a>
+                <a href="#skin1004" class="filter-btn">Skin1004</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTER FOR BRANDS PAGE -->
+    <section class="filter-bar filter-bar--brand">
+        <div class="filter-inner">
+            <span class="filter-label">Kategorie:</span>
+            <div class="filter-buttons">
+                <a href="#serum" class="filter-btn">Serum</a>
+                <a href="#toner" class="filter-btn">Toner</a>
+                <a href="#cleanser" class="filter-btn">Cleanser</a>
+                <a href="#creme" class="filter-btn">Creme</a>
+                <a href="#sunscreen" class="filter-btn">Sonnenschutz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALL BRANDS OVERVIEW -->
+    <section class="section brands-section" id="brands">
+        <div class="section-header">
+            <h2 class="section-title">Alle Marken entdecken</h2>
+        </div>
+        <div class="brands-grid">
+
+            <a href="#torriden" class="brand-card">
+                <div class="brand-card__img">
+                    <img src="https://torriden.us/cdn/shop/files/DIVEINSerum1_631ac0e3-a77b-422a-a806-bf34477cac19.jpg?v=1753346213&w=500&q=80" alt="Torriden" />
+                </div>
+                <div class="brand-card__body">
+                    <span class="brand-ko">토리든</span>
+                    <h3 class="brand-name">Torriden</h3>
+                    <p class="brand-desc">Minimalistisches Design trifft maximaler Feuchtigkeit — der Geheimtipp für glasartige Haut.</p>
+                    <span class="brand-count">6 Produkte</span>
+                </div>
+            </a>
+
+            <a href="#beautyofjoseon" class="brand-card">
+                <div class="brand-card__img">
+                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="Beauty of Joseon" />
+                </div>
+                <div class="brand-card__body">
+                    <span class="brand-ko">조세온</span>
+                    <h3 class="brand-name">Beauty of Joseon</h3>
+                    <p class="brand-desc">K-Drama Beauty — viral geworden mit Relief Serum und Dynasty Cream.</p>
+                    <span class="brand-count">6 Produkte</span>
+                </div>
+            </a>
+
+            <a href="#medicube" class="brand-card">
+                <div class="brand-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Medicube" />
+                </div>
+                <div class="brand-card__body">
+                    <span class="brand-ko">메디큐브</span>
+                    <h3 class="brand-name">Medicube</h3>
+                    <p class="brand-desc">Dermatologische Hautpflege — klinisch getestet, wissenschaftlich entwickelt.</p>
+                    <span class="brand-count">6 Produkte</span>
+                </div>
+            </a>
+
+            <a href="#anua" class="brand-card">
+                <div class="brand-card__img">
+                    <img src="https://img01.ztat.net/article/spp-media-p1/9fe15e8a8743497d8d9f4a011aa40eb4/2e8264089a604c658965e513ab5ea96f.jpg?imwidth=500&filter=packshot" alt="ANUA" />
+                </div>
+                <div class="brand-card__body">
+                    <span class="brand-ko">아누아</span>
+                    <h3 class="brand-name">ANUA</h3>
+                    <p class="brand-desc">Herzblut für einfache, wirkungsvolle Formeln — der neue K-Beauty Liebling.</p>
+                    <span class="brand-count">6 Produkte</span>
+                </div>
+            </a>
+
+            <a href="#skin1004" class="brand-card">
+                <div class="brand-card__img">
+                    <img src="https://img01.ztat.net/article/spp-media-p1/6e1ebdeb671c468eaccfe1ebdad2ee6d/62a00df006004ae39ceca11cf051d527.jpg?imwidth=500&filter=packshot" alt="Skin1004" />
+                </div>
+                <div class="brand-card__body">
+                    <span class="brand-ko">skin1004</span>
+                    <h3 class="brand-name">Skin1004</h3>
+                    <p class="brand-desc">Reines Centella Asiatica aus Madagascar — beruhigend, heilend, klassisch.</p>
+                    <span class="brand-count">6 Produkte</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- BRAND: Torriden -->
+    <section class="section products-section" id="torriden">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Torriden</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-torriden-1" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/DIVEINSerum1_631ac0e3-a77b-422a-a806-bf34477cac19.jpg?v=1753346213&w=500&q=80" alt="DIVE IN Serum" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">DIVE IN Serum</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 24.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-torriden-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/jar_-05.jpg?v=1753761627&w=500&q=80" alt="DIVE IN Soothing Cream" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">DIVE IN Soothing Cream</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 25.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-11" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/01._f1388ec2-1faf-4e49-86c8-3f62133fde5f.jpg?v=1754894980&w=500&q=80" alt="SOLID IN Lip Essence" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">SOLID IN Lip Essence</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 11.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/BALANCEFULControlMask-01.jpg?v=1774422767&w=500&q=80" alt="BALANCEFUL Control Mask" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">BALANCEFUL Control Mask</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 33.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/CELLMAZING_Pore_Tightening_Mask_10ea-04.jpg?v=1767591188&w=500&q=80" alt="CELLMAZING Pore Perfecting Mask" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">CELLMAZING Pore Perfecting Mask</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 32.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/06_80368f6c-2e81-480b-8a1f-6a2cf313e697.jpg?v=1760666839&w=500&q=80" alt="CELLMAZING Vita C Toning Pad" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">CELLMAZING Vita C Toning Pad</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 28.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+</div>
+    </section>
+
+    <!-- BRAND: Beauty of Joseon -->
+    <section class="section products-section" id="beautyofjoseon">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Beauty of Joseon</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://beautyofjoseon.com/cdn/shop/files/relief-sunscreen-1-front.webp?v=1770603160&w=500&q=80" alt="Relief Sun" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Relief Sun : Rice + Probiotics SPF50+</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 16.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://beautyofjoseon.com/cdn/shop/files/mo_7d47ae20-baed-479c-b159-7c9539c6d93e.webp?v=1768543720&w=500&q=80" alt="Dynasty Cream" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Dynasty Cream</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 22.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-3" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://beautyofjoseon.com/cdn/shop/files/mo_89750dbc-bef4-433b-b301-194406d5812e.webp?v=1768543872&w=500&q=80" alt="Glow Serum" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Glow Serum : Propolis + Niacinamide</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 14.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-3" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://beautyofjoseon.com/cdn/shop/files/mo_e319f4f4-ea6e-4e26-8f7e-3b5dc9c98546.webp?v=1766679192&w=500&q=80" alt="Green Plum Cleanser" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Green Plum Refreshing Cleanser</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 15.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://beautyofjoseon.com/cdn/shop/files/mo_ad641840-f615-4cd9-9ee8-a02116e44f58.webp?v=1768543753&w=500&q=80" alt="Relief Sun Aqua-Fresh" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Relief Sun Aqua-Fresh : Rice + B5</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 19.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-3" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://beautyofjoseon.com/cdn/shop/files/DTFS_LP100_Thumbnail_1_8b32d7e3-3b13-44ec-93fe-b7fbb3074da0.jpg?v=1763424563&w=500&q=80" alt="Daily Tinted Fluid Sunscreen" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Daily Tinted Fluid Sunscreen SPF30</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 18.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- BRAND: Medicube -->
+    <section class="section products-section" id="medicube">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Medicube</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-1" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/05b28ee78b054d1992d6f5e4b9411a2c/300554931141442ab2fb99bf9ee8991a.jpg?imwidth=500&filter=packshot" alt="ZERO PORE PAD 2.0" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Medicube</span>
+                        <h3 class="product-name">ZERO PORE PAD 2.0</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 28.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/01be75de5bda4e71aac7624df0222838/e658fe2e4fed426b89aebe1a8e3a8ff6.jpg?imwidth=500&filter=packshot" alt="PDRN PINK COLLAGEN CAPSULE CREAM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Medicube</span>
+                        <h3 class="product-name">PDRN PINK COLLAGEN CAPSULE CREAM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 23.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-3" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/d4065e1b690a4c7383bd7f20e2e469a9/1f7404e563a44563b66faf8660fe9d29.jpg?imwidth=500&filter=packshot" alt="PDRN PINK PEPTIDE SERUM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Medicube</span>
+                        <h3 class="product-name">PDRN PINK PEPTIDE SERUM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 22.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/3e6d9b4bffc4468cb4ecff2b62681329/81f45b38c3cc484488543fa5c75a7ace.jpg?imwidth=500&filter=packshot" alt="DEEP VITA C CAPSULE CREAM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Medicube</span>
+                        <h3 class="product-name">DEEP VITA C CAPSULE CREAM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 32.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/d5f2dd7f958f477d9ccc58e43b080e57/e2bf3540763a47dc94256d4b28fbe174.jpg?imwidth=500&filter=packshot" alt="COLLAGEN NIGHT WRAPPING MASK" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Medicube</span>
+                        <h3 class="product-name">COLLAGEN NIGHT WRAPPING MASK</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 25.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-6" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/3b7e95b2f6ef423fb70f8eb9131daf6e/2327fb299b264c78a506453f4d7d4e9a.jpg?imwidth=500&filter=packshot" alt="PORE BLACKHEAD MUD MASK" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Medicube</span>
+                        <h3 class="product-name">PORE BLACKHEAD MUD MASK</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 19.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- BRAND: ANUA -->
+    <section class="section products-section" id="anua">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">ANUA</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-1" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/9fe15e8a8743497d8d9f4a011aa40eb4/2e8264089a604c658965e513ab5ea96f.jpg?imwidth=500&filter=packshot" alt="HEARTLEAF 77% SOOTHING TONER" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">HEARTLEAF 77% SOOTHING TONER</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 26.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/68abefd64aef403e86668e340d2f0e5e/1270cd1b275c4d58b5f0330c6f189ecb.jpg?imwidth=500&filter=packshot" alt="HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 28.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-3" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/57a8758e479f4c7eb4ffb15059858c59/c0c68089d1b246499534465d7d7e97e0.jpg?imwidth=500&filter=packshot" alt="RICE 70 GLOW MILKY TONER" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">RICE 70 GLOW MILKY TONER</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 26.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/4356db90feab48e8923b0777af4953d0/43faca1b953440208a2c98ddaa4d7709.jpg?imwidth=500&filter=packshot" alt="NIACINAMIDE 10%+TXA 4% DARK SPOT CORRECTING SERUM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">NIACINAMIDE 10%+TXA 4% DARK SPOT CORRECTING SERUM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 26.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/b8a3fe37f88d4c41bf87d11b87aca585/d4d9338f4d284772a79b22aa55b8080c.jpg?imwidth=500&filter=packshot" alt="3 CERAMIDE PANTHENOL MOISTURE BARRIER CREAM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">3 CERAMIDE PANTHENOL MOISTURE BARRIER CREAM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 44.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-6" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/981399dcbc4d46f2b37c4fea27134397/2c84e620d82e449c8d733f916f799eba.jpg?imwidth=500&filter=packshot" alt="HEARTLEAF PORE CONTROL CLEANSING OIL" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">HEARTLEAF PORE CONTROL CLEANSING OIL</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 26.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- BRAND: Skin1004 -->
+    <section class="section products-section" id="skin1004">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Skin1004</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-1" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/6e1ebdeb671c468eaccfe1ebdad2ee6d/62a00df006004ae39ceca11cf051d527.jpg?imwidth=500&filter=packshot" alt="MADAGASCAR CENTELLA AMPOULE" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">MADAGASCAR CENTELLA AMPOULE</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 23.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/1274bd9bf68542ac92fb81f35df1c1cf/a907804de64c48ce8263482f3827164a.jpg?imwidth=500&filter=packshot" alt="MADAGASCAR CENTELLA SOOTHING CREAM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">MADAGASCAR CENTELLA SOOTHING CREAM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 16.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-3" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/852034f5e2244df6938a3d3e9579be59/8c9901affd2548418502edb1aa26fa5a.jpg?imwidth=500&filter=packshot" alt="MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 21.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/864fdaabb59640029859a67ff42f3161/162ffffd60a9416c9769e2bffbb6748e.jpg?imwidth=500&filter=packshot" alt="MADAGASCAR CENTELLA LIGHT CLEANSING OIL" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">MADAGASCAR CENTELLA LIGHT CLEANSING OIL</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 17.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/180d630b8512476c89894ce0597f16e5/6f45141997844ea39069c332ed91c3ed.jpg?imwidth=500&filter=packshot" alt="MADAGASCAR CENTELLA POREMIZING DEEP CLEANSING FOAM" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">MADAGASCAR CENTELLA POREMIZING DEEP CLEANSING FOAM</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 22.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-6" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/71d2bbe6ee634cd4b064ebda3e6527a3/e6a41fa50add4743a113632ac8567a80.jpg?imwidth=500&filter=packshot" alt="MADAGASCAR CENTELLA QUICK CALMING PAD" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">MADAGASCAR CENTELLA QUICK CALMING PAD</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 24.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORY: SERUM (all brands) -->
+    <section class="section products-section" id="serum">
+        <div class="section-header">
+            <div class="section-label">Kategorie</div>
+            <h2 class="section-title">Serum & Essenz</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500&q=80" alt="Torriden Serum" />
+                    <span class="product-badge">Bestseller</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Dive-In Low Molecular Hyaluronic Acid Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.90</span>
+                        <a href="product-detail.html#detail-1" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="Beauty of Joseon Serum" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Relief Serum : Rice + Centella</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 26.50</span>
+                        <a href="product-detail.html#detail-2" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Medicube Serum" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Medicube</span>
+                    <h3 class="product-name">Deep VC 500mg Vitamin C Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 38.00</span>
+                        <a href="product-detail.html#detail-7" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=500&q=80" alt="Medicube Niacinamide" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Medicube</span>
+                    <h3 class="product-name">CICA-M 1% Niacinamide Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 32.00</span>
+                        <a href="product-detail.html#detail-12" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORY: TONER (all brands) -->
+    <section class="section products-section" id="toner">
+        <div class="section-header">
+            <div class="section-label">Kategorie</div>
+            <h2 class="section-title">Toner</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="ANUA Toner" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">ANUA</span>
+                    <h3 class="product-name">Heartleaf 77% Soothing Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 18.90</span>
+                        <a href="product-detail.html#detail-8" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80" alt="Torriden Toner" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Balanceful Gradient Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 19.80</span>
+                        <a href="product-detail.html#detail-5" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORY: CLEANSER (all brands) -->
+    <section class="section products-section" id="cleanser">
+        <div class="section-header">
+            <div class="section-label">Kategorie</div>
+            <h2 class="section-title">Cleanser</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80" alt="ANUA Cleanser" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">ANUA</span>
+                    <h3 class="product-name">Heartleaf Quercetinol Foam Cleanser</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 16.50</span>
+                        <a href="product-detail.html#detail-9" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORY: CREME (all brands) -->
+    <section class="section products-section" id="creme">
+        <div class="section-header">
+            <div class="section-label">Kategorie</div>
+            <h2 class="section-title">Creme</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=500&q=80" alt="Madagascar Centella Cream" />
+                    <span class="product-badge">Klassiker</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Madagascar Centella</span>
+                    <h3 class="product-name">Centella Asiatica Skin Barrier Cream</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.00</span>
+                        <a href="product-detail.html#detail-6" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Beauty of Joseon Cream" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Dynasty Cream : Ginseng + Royal Jelly</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 42.00</span>
+                        <a href="product-detail.html#detail-4" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card" id="p11">
+                <a href="product-detail.html#detail-11" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=500&q=80" alt="Torriden Emulsion" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Torriden</span>
+                        <h3 class="product-name">Cell-In Hyaluronic Emulsion</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 28.00</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATEGORY: SUNSCREEN (all brands) -->
+    <section class="section products-section" id="sunscreen">
+        <div class="section-header">
+            <div class="section-label">Kategorie</div>
+            <h2 class="section-title">Sonnenschutz</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Beauty of Joseon Sunscreen" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Dynasty Cream : Ginseng + Royal Jelly</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 42.00</span>
+                        <a href="product-detail.html#detail-4" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="section cta-banner">
+        <div class="cta-banner__inner">
+            <h2>Die richtige Marke<br />für deine Haut?</h2>
+            <p>Jede Haut ist anders. Wir helfen dir, das passende Produkt zu finden.</p>
+            <a href="contact.html" class="btn-primary">Beratung anfordern</a>
+        </div>
+    </section>
+
+</main>
+
+<!-- PRODUCT MODALS FOR BRANDS PAGE -->
+
+<!-- Product 1: Torriden Dive-In -->
+<div class="modal-overlay" id="detail-1">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=700&q=80" alt="Torriden Dive-In Serum" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Torriden</span>
+                <h2>Dive-In Low Molecular Hyaluronic Acid Serum</h2>
+                <span class="modal-price">CHF 24.90</span>
+                <div class="modal-desc">Das Dive-In Serum von Torriden enthält niedermolekulare Hyaluronsäure, die tief in die Haut eindringt und von innen heraus mit Feuchtigkeit versorgt. Die leichtgewichtige Gel-Textur zieht sofort ein.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Low Molecular Hyaluronic Acid</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                        <span class="ingredient-tag">Madecassoside</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-1">Vor- & Nachname</label>
+                            <input type="text" id="order-name-1" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-1">E-Mail</label>
+                            <input type="email" id="order-email-1" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-1">Lieferadresse</label>
+                            <input type="text" id="order-address-1" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-1">Anzahl</label>
+                            <input type="number" id="order-qty-1" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-1">Bemerkung</label>
+                            <input type="text" id="order-note-1" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Torriden Dive-In Serum - CHF 24.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 2: Beauty of Joseon Relief -->
+<div class="modal-overlay" id="detail-2">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=700&q=80" alt="Beauty of Joseon Relief Serum" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Beauty of Joseon</span>
+                <h2>Relief Serum : Rice + Centella</h2>
+                <span class="modal-price">CHF 26.50</span>
+                <div class="modal-desc">Das Relief Serum kombiniert fermentierten Reisextrakt mit Centella Asiatica für intensive Feuchtigkeit und Beruhigung.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Fermented Rice Extract</span>
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-2">Vor- & Nachname</label>
+                            <input type="text" id="order-name-2" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-2">E-Mail</label>
+                            <input type="email" id="order-email-2" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-2">Lieferadresse</label>
+                            <input type="text" id="order-address-2" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-2">Anzahl</label>
+                            <input type="number" id="order-qty-2" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-2">Bemerkung</label>
+                            <input type="text" id="order-note-2" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Beauty of Joseon Relief Serum - CHF 26.50" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 3: Beauty of Joseon Glow -->
+<div class="modal-overlay" id="detail-3">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=700&q=80" alt="Beauty of Joseon Glow Serum" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Beauty of Joseon</span>
+                <h2>Deep Glow Serum : Green Tea + Alpha Arbutin</h2>
+                <span class="modal-price">CHF 29.00</span>
+                <div class="modal-desc">Das Deep Glow Serum mit Grüntee und Alpha Arbutin für einen strahlenden Teint.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Green Tea Extract</span>
+                        <span class="ingredient-tag">Alpha Arbutin</span>
+                        <span class="ingredient-tag">Niacinamide</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-3">Vor- & Nachname</label>
+                            <input type="text" id="order-name-3" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-3">E-Mail</label>
+                            <input type="email" id="order-email-3" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-3">Lieferadresse</label>
+                            <input type="text" id="order-address-3" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-3">Anzahl</label>
+                            <input type="number" id="order-qty-3" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-3">Bemerkung</label>
+                            <input type="text" id="order-note-3" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Beauty of Joseon Deep Glow Serum - CHF 29.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 4: Beauty of Joseon Dynasty Cream -->
+<div class="modal-overlay" id="detail-4">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=700&q=80" alt="Beauty of Joseon Dynasty Cream" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Beauty of Joseon</span>
+                <h2>Dynasty Cream : Ginseng + Royal Jelly</h2>
+                <span class="modal-price">CHF 42.00</span>
+                <div class="modal-desc">Die luxuriöse Creme mit Ginseng und Gelée Royale für strahlende, genährte Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Ginseng Extract</span>
+                        <span class="ingredient-tag">Royal Jelly</span>
+                        <span class="ingredient-tag">Snail Mucin</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-4">Vor- & Nachname</label>
+                            <input type="text" id="order-name-4" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-4">E-Mail</label>
+                            <input type="email" id="order-email-4" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-4">Lieferadresse</label>
+                            <input type="text" id="order-address-4" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-4">Anzahl</label>
+                            <input type="number" id="order-qty-4" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-4">Bemerkung</label>
+                            <input type="text" id="order-note-4" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Beauty of Joseon Dynasty Cream - CHF 42.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 5: Torriden Toner -->
+<div class="modal-overlay" id="detail-5">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=700&q=80" alt="Torriden Toner" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Torriden</span>
+                <h2>Balanceful Gradient Toner</h2>
+                <span class="modal-price">CHF 19.80</span>
+                <div class="modal-desc">Der Balanceful Gradient Toner spendet Feuchtigkeit und beruhigt gereizte Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Hyaluronic Acid</span>
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Betaine</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-5">Vor- & Nachname</label>
+                            <input type="text" id="order-name-5" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-5">E-Mail</label>
+                            <input type="email" id="order-email-5" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-5">Lieferadresse</label>
+                            <input type="text" id="order-address-5" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-5">Anzahl</label>
+                            <input type="number" id="order-qty-5" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-5">Bemerkung</label>
+                            <input type="text" id="order-note-5" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Torriden Balanceful Gradient Toner - CHF 19.80" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Skin-1: Skin1004 Madagascar Centella Ampoule -->
+<div class="modal-overlay" id="detail-skin-1">
+    <div class="modal">
+        <a href="#skin1004" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/6e1ebdeb671c468eaccfe1ebdad2ee6d/62a00df006004ae39ceca11cf051d527.jpg?imwidth=700&filter=packshot" alt="MADAGASCAR CENTELLA AMPOULE" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Skin1004</span>
+                <h2>MADAGASCAR CENTELLA AMPOULE</h2>
+                <span class="modal-price">CHF 23.00</span>
+                <div class="modal-desc">Reines Centella Asiatica-Serum aus Madagascar für beruhigte und gestärkte Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica Extract</span>
+                        <span class="ingredient-tag">Madecassoside</span>
+                        <span class="ingredient-tag">Asiaticoside</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin1-name">Vor- & Nachname</label>
+                            <input type="text" id="order-skin1-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin1-email">E-Mail</label>
+                            <input type="email" id="order-skin1-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-skin1-address">Lieferadresse</label>
+                            <input type="text" id="order-skin1-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin1-qty">Anzahl</label>
+                            <input type="number" id="order-skin1-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin1-note">Bemerkung</label>
+                            <input type="text" id="order-skin1-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Skin1004 MADAGASCAR CENTELLA AMPOULE - CHF 23.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Skin-2: Skin1004 Madagascar Centella Soothing Cream -->
+<div class="modal-overlay" id="detail-skin-2">
+    <div class="modal">
+        <a href="#skin1004" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/1274bd9bf68542ac92fb81f35df1c1cf/a907804de64c48ce8263482f3827164a.jpg?imwidth=700&filter=packshot" alt="MADAGASCAR CENTELLA SOOTHING CREAM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Skin1004</span>
+                <h2>MADAGASCAR CENTELLA SOOTHING CREAM</h2>
+                <span class="modal-price">CHF 16.00</span>
+                <div class="modal-desc">Beruhigende Creme mit reinem Centella Asiatica für empfindliche Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica Extract</span>
+                        <span class="ingredient-tag">Madecassoside</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin2-name">Vor- & Nachname</label>
+                            <input type="text" id="order-skin2-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin2-email">E-Mail</label>
+                            <input type="email" id="order-skin2-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-skin2-address">Lieferadresse</label>
+                            <input type="text" id="order-skin2-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin2-qty">Anzahl</label>
+                            <input type="number" id="order-skin2-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin2-note">Bemerkung</label>
+                            <input type="text" id="order-skin2-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Skin1004 MADAGASCAR CENTELLA SOOTHING CREAM - CHF 16.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Skin-3: Skin1004 Madagascar Centella Hyalu-Cica Sun Serum -->
+<div class="modal-overlay" id="detail-skin-3">
+    <div class="modal">
+        <a href="#skin1004" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/852034f5e2244df6938a3d3e9579be59/8c9901affd2548418502edb1aa26fa5a.jpg?imwidth=700&filter=packshot" alt="MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Skin1004</span>
+                <h2>MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM</h2>
+                <span class="modal-price">CHF 21.90</span>
+                <div class="modal-desc">Leichtes Sonnenserum mit SPF50+ und Centella fürUV-Schutz ohne Reizungen.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Hyaluronic Acid</span>
+                        <span class="ingredient-tag">Cica</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin3-name">Vor- & Nachname</label>
+                            <input type="text" id="order-skin3-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin3-email">E-Mail</label>
+                            <input type="email" id="order-skin3-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-skin3-address">Lieferadresse</label>
+                            <input type="text" id="order-skin3-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin3-qty">Anzahl</label>
+                            <input type="number" id="order-skin3-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin3-note">Bemerkung</label>
+                            <input type="text" id="order-skin3-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Skin1004 MADAGASCAR CENTELLA HYALU-CICA SUN SERUM - CHF 21.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Skin-4: Skin1004 Madagascar Centella Light Cleansing Oil -->
+<div class="modal-overlay" id="detail-skin-4">
+    <div class="modal">
+        <a href="#skin1004" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/864fdaabb59640029859a67ff42f3161/162ffffd60a9416c9769e2bffbb6748e.jpg?imwidth=700&filter=packshot" alt="MADAGASCAR CENTELLA LIGHT CLEANSING OIL" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Skin1004</span>
+                <h2>MADAGASCAR CENTELLA LIGHT CLEANSING OIL</h2>
+                <span class="modal-price">CHF 17.00</span>
+                <div class="modal-desc">Leichtes Reinigungsöl für sanfte Make-up-Entfernung und porentiefe Reinigung.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Jojoba Oil</span>
+                        <span class="ingredient-tag">Green Tea Extract</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin4-name">Vor- & Nachname</label>
+                            <input type="text" id="order-skin4-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin4-email">E-Mail</label>
+                            <input type="email" id="order-skin4-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-skin4-address">Lieferadresse</label>
+                            <input type="text" id="order-skin4-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin4-qty">Anzahl</label>
+                            <input type="number" id="order-skin4-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin4-note">Bemerkung</label>
+                            <input type="text" id="order-skin4-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Skin1004 MADAGASCAR CENTELLA LIGHT CLEANSING OIL - CHF 17.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Skin-5: Skin1004 Madagascar Centella Poremizing Deep Cleansing Foam -->
+<div class="modal-overlay" id="detail-skin-5">
+    <div class="modal">
+        <a href="#skin1004" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/180d630b8512476c89894ce0597f16e5/6f45141997844ea39069c332ed91c3ed.jpg?imwidth=700&filter=packshot" alt="MADAGASCAR CENTELLA POREMIZING DEEP CLEANSING FOAM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Skin1004</span>
+                <h2>MADAGASCAR CENTELLA POREMIZING DEEP CLEANSING FOAM</h2>
+                <span class="modal-price">CHF 22.00</span>
+                <div class="modal-desc">Tiefenreinigender Schaum für porenverfeinerte und erfrischte Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Salicylic Acid</span>
+                        <span class="ingredient-tag">Niacinamide</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin5-name">Vor- & Nachname</label>
+                            <input type="text" id="order-skin5-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin5-email">E-Mail</label>
+                            <input type="email" id="order-skin5-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-skin5-address">Lieferadresse</label>
+                            <input type="text" id="order-skin5-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin5-qty">Anzahl</label>
+                            <input type="number" id="order-skin5-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin5-note">Bemerkung</label>
+                            <input type="text" id="order-skin5-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Skin1004 MADAGASCAR CENTELLA POREMIZING DEEP CLEANSING FOAM - CHF 22.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Skin-6: Skin1004 Madagascar Centella Quick Calming Pad -->
+<div class="modal-overlay" id="detail-skin-6">
+    <div class="modal">
+        <a href="#skin1004" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/71d2bbe6ee634cd4b064ebda3e6527a3/e6a41fa50add4743a113632ac8567a80.jpg?imwidth=700&filter=packshot" alt="MADAGASCAR CENTELLA QUICK CALMING PAD" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Skin1004</span>
+                <h2>MADAGASCAR CENTELLA QUICK CALMING PAD</h2>
+                <span class="modal-price">CHF 24.90</span>
+                <div class="modal-desc">Beruhigende Pads für sofortige Linderung bei gereizter Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Madecassoside</span>
+                        <span class="ingredient-tag">Green Tea Extract</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin6-name">Vor- & Nachname</label>
+                            <input type="text" id="order-skin6-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin6-email">E-Mail</label>
+                            <input type="email" id="order-skin6-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-skin6-address">Lieferadresse</label>
+                            <input type="text" id="order-skin6-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-skin6-qty">Anzahl</label>
+                            <input type="number" id="order-skin6-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-skin6-note">Bemerkung</label>
+                            <input type="text" id="order-skin6-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Skin1004 MADAGASCAR CENTELLA QUICK CALMING PAD - CHF 24.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Med-1: Medicube Zero Pore Pad -->
+<div class="modal-overlay" id="detail-med-1">
+    <div class="modal">
+        <a href="#medicube" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/05b28ee78b054d1992d6f5e4b9411a2c/300554931141442ab2fb99bf9ee8991a.jpg?imwidth=700&filter=packshot" alt="ZERO PORE PAD 2.0" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>ZERO PORE PAD 2.0</h2>
+                <span class="modal-price">CHF 28.00</span>
+                <div class="modal-desc">Die Pore Pads mit AHA/BHA für glatte, porenverfeinerte Haut. 70 Pads für effektive Exfoliation.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">AHA</span>
+                        <span class="ingredient-tag">BHA</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med1-name">Vor- & Nachname</label>
+                            <input type="text" id="order-med1-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med1-email">E-Mail</label>
+                            <input type="email" id="order-med1-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-med1-address">Lieferadresse</label>
+                            <input type="text" id="order-med1-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med1-qty">Anzahl</label>
+                            <input type="number" id="order-med1-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med1-note">Bemerkung</label>
+                            <input type="text" id="order-med1-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube ZERO PORE PAD 2.0 - CHF 28.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Med-2: Medicube PDRN Pink Collagen Capsule Cream -->
+<div class="modal-overlay" id="detail-med-2">
+    <div class="modal">
+        <a href="#medicube" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/01be75de5bda4e71aac7624df0222838/e658fe2e4fed426b89aebe1a8e3a8ff6.jpg?imwidth=700&filter=packshot" alt="PDRN PINK COLLAGEN CAPSULE CREAM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>PDRN PINK COLLAGEN CAPSULE CREAM</h2>
+                <span class="modal-price">CHF 23.90</span>
+                <div class="modal-desc">Leichte Kollagen-Creme mit PDRN für straffe, jugendliche Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">PDRN</span>
+                        <span class="ingredient-tag">Kollagen</span>
+                        <span class="ingredient-tag">Peptide</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med2-name">Vor- & Nachname</label>
+                            <input type="text" id="order-med2-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med2-email">E-Mail</label>
+                            <input type="email" id="order-med2-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-med2-address">Lieferadresse</label>
+                            <input type="text" id="order-med2-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med2-qty">Anzahl</label>
+                            <input type="number" id="order-med2-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med2-note">Bemerkung</label>
+                            <input type="text" id="order-med2-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube PDRN PINK COLLAGEN CAPSULE CREAM - CHF 23.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Med-3: Medicube PDRN Pink Peptide Serum -->
+<div class="modal-overlay" id="detail-med-3">
+    <div class="modal">
+        <a href="#medicube" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/d4065e1b690a4c7383bd7f20e2e469a9/1f7404e563a44563b66faf8660fe9d29.jpg?imwidth=700&filter=packshot" alt="PDRN PINK PEPTIDE SERUM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>PDRN PINK PEPTIDE SERUM</h2>
+                <span class="modal-price">CHF 22.90</span>
+                <div class="modal-desc">Peptide-Serum mit PDRN für faltenglättende Pflege.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">PDRN</span>
+                        <span class="ingredient-tag">Peptide</span>
+                        <span class="ingredient-tag">Pink Toner</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med3-name">Vor- & Nachname</label>
+                            <input type="text" id="order-med3-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med3-email">E-Mail</label>
+                            <input type="email" id="order-med3-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-med3-address">Lieferadresse</label>
+                            <input type="text" id="order-med3-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med3-qty">Anzahl</label>
+                            <input type="number" id="order-med3-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med3-note">Bemerkung</label>
+                            <input type="text" id="order-med3-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube PDRN PINK PEPTIDE SERUM - CHF 22.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Med-4: Medicube Deep Vita C Capsule Cream -->
+<div class="modal-overlay" id="detail-med-4">
+    <div class="modal">
+        <a href="#medicube" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/3e6d9b4bffc4468cb4ecff2b62681329/81f45b38c3cc484488543fa5c75a7ace.jpg?imwidth=700&filter=packshot" alt="DEEP VITA C CAPSULE CREAM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>DEEP VITA C CAPSULE CREAM</h2>
+                <span class="modal-price">CHF 32.90</span>
+                <div class="modal-desc">Vitamin C Creme mit 50% Vitamin-Wasser für strahlende, ebenmässige Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Vitamin C 20%</span>
+                        <span class="ingredient-tag">Niacinamide 5%</span>
+                        <span class="ingredient-tag">Vitamin-Wasser</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med4-name">Vor- & Nachname</label>
+                            <input type="text" id="order-med4-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med4-email">E-Mail</label>
+                            <input type="email" id="order-med4-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-med4-address">Lieferadresse</label>
+                            <input type="text" id="order-med4-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med4-qty">Anzahl</label>
+                            <input type="number" id="order-med4-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med4-note">Bemerkung</label>
+                            <input type="text" id="order-med4-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube DEEP VITA C CAPSULE CREAM - CHF 32.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Med-5: Medicube Collagen Night Wrapping Mask -->
+<div class="modal-overlay" id="detail-med-5">
+    <div class="modal">
+        <a href="#medicube" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/d5f2dd7f958f477d9ccc58e43b080e57/e2bf3540763a47dc94256d4b28fbe174.jpg?imwidth=700&filter=packshot" alt="COLLAGEN NIGHT WRAPPING MASK" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>COLLAGEN NIGHT WRAPPING MASK</h2>
+                <span class="modal-price">CHF 25.90</span>
+                <div class="modal-desc">Kollagen-Nachtmaske für intensive Feuchtigkeit und Regeneration über Nacht.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Kollagen</span>
+                        <span class="ingredient-tag">Hyaluronsäure</span>
+                        <span class="ingredient-tag">Ceramide</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med5-name">Vor- & Nachname</label>
+                            <input type="text" id="order-med5-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med5-email">E-Mail</label>
+                            <input type="email" id="order-med5-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-med5-address">Lieferadresse</label>
+                            <input type="text" id="order-med5-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med5-qty">Anzahl</label>
+                            <input type="number" id="order-med5-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med5-note">Bemerkung</label>
+                            <input type="text" id="order-med5-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube COLLAGEN NIGHT WRAPPING MASK - CHF 25.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Med-6: Medicube Pore Blackhead Mud Mask -->
+<div class="modal-overlay" id="detail-med-6">
+    <div class="modal">
+        <a href="#medicube" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/3b7e95b2f6ef423fb70f8eb9131daf6e/2327fb299b264c78a506453f4d7d4e9a.jpg?imwidth=700&filter=packshot" alt="PORE BLACKHEAD MUD MASK" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>PORE BLACKHEAD MUD MASK</h2>
+                <span class="modal-price">CHF 19.90</span>
+                <div class="modal-desc">Ton-Maske mit AHA/BHA/PHA für porentiefe Reinigung und Blackhead-Entfernung.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">AHA</span>
+                        <span class="ingredient-tag">BHA</span>
+                        <span class="ingredient-tag">PHA</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med6-name">Vor- & Nachname</label>
+                            <input type="text" id="order-med6-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med6-email">E-Mail</label>
+                            <input type="email" id="order-med6-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-med6-address">Lieferadresse</label>
+                            <input type="text" id="order-med6-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-med6-qty">Anzahl</label>
+                            <input type="number" id="order-med6-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-med6-note">Bemerkung</label>
+                            <input type="text" id="order-med6-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube PORE BLACKHEAD MUD MASK - CHF 19.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 7: Medicube Vitamin C (old placeholder) -->
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Vitamin C 20%</span>
+                        <span class="ingredient-tag">Glutathione</span>
+                        <span class="ingredient-tag">Niacinamide</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-7">Vor- & Nachname</label>
+                            <input type="text" id="order-name-7" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-7">E-Mail</label>
+                            <input type="email" id="order-email-7" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-7">Lieferadresse</label>
+                            <input type="text" id="order-address-7" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-7">Anzahl</label>
+                            <input type="number" id="order-qty-7" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-7">Bemerkung</label>
+                            <input type="text" id="order-note-7" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube Deep VC Serum - CHF 38.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Anua-1: ANUA Heartleaf 77% Toner -->
+<div class="modal-overlay" id="detail-anua-1">
+    <div class="modal">
+        <a href="#anua" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/9fe15e8a8743497d8d9f4a011aa40eb4/2e8264089a604c658965e513ab5ea96f.jpg?imwidth=700&filter=packshot" alt="HEARTLEAF 77% SOOTHING TONER" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>HEARTLEAF 77% SOOTHING TONER</h2>
+                <span class="modal-price">CHF 26.00</span>
+                <div class="modal-desc">Beruhigender Toner mit 77% Heartleaf Extrakt für gereizte und empfindliche Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Heartleaf Extract 77%</span>
+                        <span class="ingredient-tag">Green Tea Extract</span>
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua1-name">Vor- & Nachname</label>
+                            <input type="text" id="order-anua1-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua1-email">E-Mail</label>
+                            <input type="email" id="order-anua1-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-anua1-address">Lieferadresse</label>
+                            <input type="text" id="order-anua1-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua1-qty">Anzahl</label>
+                            <input type="number" id="order-anua1-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua1-note">Bemerkung</label>
+                            <input type="text" id="order-anua1-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA HEARTLEAF 77% SOOTHING TONER - CHF 26.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Anua-2: ANUA Heartleaf Quercetinol Cleanser -->
+<div class="modal-overlay" id="detail-anua-2">
+    <div class="modal">
+        <a href="#anua" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/68abefd64aef403e86668e340d2f0e5e/1270cd1b275c4d58b5f0330c6f189ecb.jpg?imwidth=700&filter=packshot" alt="HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM</h2>
+                <span class="modal-price">CHF 28.00</span>
+                <div class="modal-desc">Tiefenreinigender Schaum mit Quercetinol für porenverfeinerte Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Heartleaf Extract</span>
+                        <span class="ingredient-tag">Quercetinol</span>
+                        <span class="ingredient-tag">Salicylic Acid</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua2-name">Vor- & Nachname</label>
+                            <input type="text" id="order-anua2-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua2-email">E-Mail</label>
+                            <input type="email" id="order-anua2-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-anua2-address">Lieferadresse</label>
+                            <input type="text" id="order-anua2-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua2-qty">Anzahl</label>
+                            <input type="number" id="order-anua2-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua2-note">Bemerkung</label>
+                            <input type="text" id="order-anua2-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA HEARTLEAF QUERCETINOL PORE DEEP CLEANSING FOAM - CHF 28.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Anua-3: ANUA Rice 70 Glow Milky Toner -->
+<div class="modal-overlay" id="detail-anua-3">
+    <div class="modal">
+        <a href="#anua" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/57a8758e479f4c7eb4ffb15059858c59/c0c68089d1b246499534465d7d7e97e0.jpg?imwidth=700&filter=packshot" alt="RICE 70 GLOW MILKY TONER" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>RICE 70 GLOW MILKY TONER</h2>
+                <span class="modal-price">CHF 26.00</span>
+                <div class="modal-desc">Milchiger Toner mit Reiskleiewasser für strahlende, glühende Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Rice Bran Water 70%</span>
+                        <span class="ingredient-tag">Ceramide</span>
+                        <span class="ingredient-tag">Hyaluronic Acid</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua3-name">Vor- & Nachname</label>
+                            <input type="text" id="order-anua3-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua3-email">E-Mail</label>
+                            <input type="email" id="order-anua3-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-anua3-address">Lieferadresse</label>
+                            <input type="text" id="order-anua3-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua3-qty">Anzahl</label>
+                            <input type="number" id="order-anua3-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua3-note">Bemerkung</label>
+                            <input type="text" id="order-anua3-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA RICE 70 GLOW MILKY TONER - CHF 26.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Anua-4: ANUA Niacinamide 10% TXA 4% Serum -->
+<div class="modal-overlay" id="detail-anua-4">
+    <div class="modal">
+        <a href="#anua" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/4356db90feab48e8923b0777af4953d0/43faca1b953440208a2c98ddaa4d7709.jpg?imwidth=700&filter=packshot" alt="NIACINAMIDE 10%+TXA 4% DARK SPOT CORRECTING SERUM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>NIACINAMIDE 10%+TXA 4% DARK SPOT CORRECTING SERUM</h2>
+                <span class="modal-price">CHF 26.00</span>
+                <div class="modal-desc">Aufhellendes Serum mit 10% Niacinamide und 4% TXA gegen dunkle Flecken.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Niacinamide 10%</span>
+                        <span class="ingredient-tag">TXA 4%</span>
+                        <span class="ingredient-tag">Hyaluronic Acid</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua4-name">Vor- & Nachname</label>
+                            <input type="text" id="order-anua4-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua4-email">E-Mail</label>
+                            <input type="email" id="order-anua4-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-anua4-address">Lieferadresse</label>
+                            <input type="text" id="order-anua4-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua4-qty">Anzahl</label>
+                            <input type="number" id="order-anua4-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua4-note">Bemerkung</label>
+                            <input type="text" id="order-anua4-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA NIACINAMIDE 10%+TXA 4% SERUM - CHF 26.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Anua-5: ANUA 3 Ceramide Panthenol Moisture Barrier Cream -->
+<div class="modal-overlay" id="detail-anua-5">
+    <div class="modal">
+        <a href="#anua" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/b8a3fe37f88d4c41bf87d11b87aca585/d4d9338f4d284772a79b22aa55b8080c.jpg?imwidth=700&filter=packshot" alt="3 CERAMIDE PANTHENOL MOISTURE BARRIER CREAM" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>3 CERAMIDE PANTHENOL MOISTURE BARRIER CREAM</h2>
+                <span class="modal-price">CHF 44.90</span>
+                <div class="modal-desc">Feuchtigkeits-creme mit 3 Ceramiden und Panthenol für gestärkte Hautbarriere.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Ceramide 3</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                        <span class="ingredient-tag">Hyaluronic Acid</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua5-name">Vor- & Nachname</label>
+                            <input type="text" id="order-anua5-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua5-email">E-Mail</label>
+                            <input type="email" id="order-anua5-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-anua5-address">Lieferadresse</label>
+                            <input type="text" id="order-anua5-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua5-qty">Anzahl</label>
+                            <input type="number" id="order-anua5-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua5-note">Bemerkung</label>
+                            <input type="text" id="order-anua5-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA 3 CERAMIDE PANTHENOL MOISTURE BARRIER CREAM - CHF 44.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Anua-6: ANUA Heartleaf Pore Control Cleansing Oil -->
+<div class="modal-overlay" id="detail-anua-6">
+    <div class="modal">
+        <a href="#anua" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://img01.ztat.net/article/spp-media-p1/981399dcbc4d46f2b37c4fea27134397/2c84e620d82e449c8d733f916f799eba.jpg?imwidth=700&filter=packshot" alt="HEARTLEAF PORE CONTROL CLEANSING OIL" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>HEARTLEAF PORE CONTROL CLEANSING OIL</h2>
+                <span class="modal-price">CHF 26.00</span>
+                <div class="modal-desc">Reinigungsöl mit Heartleaf für porentiefe Reinigung und Make-up-Entfernung.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Heartleaf Extract</span>
+                        <span class="ingredient-tag">Jojoba Oil</span>
+                        <span class="ingredient-tag">Green Tea Extract</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua6-name">Vor- & Nachname</label>
+                            <input type="text" id="order-anua6-name" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua6-email">E-Mail</label>
+                            <input type="email" id="order-anua6-email" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-anua6-address">Lieferadresse</label>
+                            <input type="text" id="order-anua6-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-anua6-qty">Anzahl</label>
+                            <input type="number" id="order-anua6-qty" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-anua6-note">Bemerkung</label>
+                            <input type="text" id="order-anua6-note" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA HEARTLEAF PORE CONTROL CLEANSING OIL - CHF 26.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 9: ANUA Cleanser -->
+<div class="modal-overlay" id="detail-9">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=80" alt="ANUA Cleanser" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">ANUA</span>
+                <h2>Heartleaf Quercetinol Foam Cleanser</h2>
+                <span class="modal-price">CHF 16.50</span>
+                <div class="modal-desc">Der sanfte Schaumreiniger mit Heartleaf und Quercetinol für empfindliche Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Heartleaf Extract</span>
+                        <span class="ingredient-tag">Quercetinol</span>
+                        <span class="ingredient-tag">Green Tea</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-9">Vor- & Nachname</label>
+                            <input type="text" id="order-name-9" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-9">E-Mail</label>
+                            <input type="email" id="order-email-9" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-9">Lieferadresse</label>
+                            <input type="text" id="order-address-9" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-9">Anzahl</label>
+                            <input type="number" id="order-qty-9" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-9">Bemerkung</label>
+                            <input type="text" id="order-note-9" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="ANUA Heartleaf Cleanser - CHF 16.50" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 10: Madagascar Centella Lotion -->
+<div class="modal-overlay" id="detail-10">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80" alt="Madagascar Centella Lotion" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Madagascar Centella</span>
+                <h2>Tone Brightening Body Lotion</h2>
+                <span class="modal-price">CHF 21.00</span>
+                <div class="modal-desc">Die aufhellende Body Lotion für einen gleichmässigen Hautton.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Alpha Arbutin</span>
+                        <span class="ingredient-tag">Vitamin C</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-10">Vor- & Nachname</label>
+                            <input type="text" id="order-name-10" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-10">E-Mail</label>
+                            <input type="email" id="order-email-10" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-10">Lieferadresse</label>
+                            <input type="text" id="order-address-10" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-10">Anzahl</label>
+                            <input type="number" id="order-qty-10" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-10">Bemerkung</label>
+                            <input type="text" id="order-note-10" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Madagascar Centella Body Lotion - CHF 21.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 11: Torriden Emulsion -->
+<div class="modal-overlay" id="detail-11">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=700&q=80" alt="Torriden Emulsion" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Torriden</span>
+                <h2>Cell-In Hyaluronic Emulsion</h2>
+                <span class="modal-price">CHF 28.00</span>
+                <div class="modal-desc">Die leichte Emulsion mit Hyaluronsäure für intensive Feuchtigkeitsversorgung.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Multi-Molecular Hyaluronic Acid</span>
+                        <span class="ingredient-tag">Ceramide</span>
+                        <span class="ingredient-tag">Squalane</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-11">Vor- & Nachname</label>
+                            <input type="text" id="order-name-11" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-11">E-Mail</label>
+                            <input type="email" id="order-email-11" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-11">Lieferadresse</label>
+                            <input type="text" id="order-address-11" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-11">Anzahl</label>
+                            <input type="number" id="order-qty-11" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-11">Bemerkung</label>
+                            <input type="text" id="order-note-11" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Torriden Cell-In Emulsion - CHF 28.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 12: Medicube Niacinamide -->
+<div class="modal-overlay" id="detail-12">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=700&q=80" alt="Medicube Niacinamide" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Medicube</span>
+                <h2>CICA-M 1% Niacinamide Serum</h2>
+                <span class="modal-price">CHF 32.00</span>
+                <div class="modal-desc">Das beruhigende Niacinamid Serum für Problemhaut mit Centella.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Niacinamide 1%</span>
+                        <span class="ingredient-tag">Cica Extract</span>
+                        <span class="ingredient-tag">Zinc PCA</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-12">Vor- & Nachname</label>
+                            <input type="text" id="order-name-12" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-12">E-Mail</label>
+                            <input type="email" id="order-email-12" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-12">Lieferadresse</label>
+                            <input type="text" id="order-address-12" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-12">Anzahl</label>
+                            <input type="number" id="order-qty-12" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-12">Bemerkung</label>
+                            <input type="text" id="order-note-12" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Medicube CICA-M Serum - CHF 32.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <span class="logo">SORA</span>
+            <p>Kuratiertes K-Beauty<br />aus Seoul — für die Schweiz.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Shop</h4>
+            <a href="products.html">Alle Produkte</a>
+            <a href="brands.html">Marken</a>
+            <a href="products.html#serum">Seren</a>
+            <a href="products.html#mask">Masken</a>
+        </div>
+        <div class="footer-links">
+            <h4>Info</h4>
+            <a href="contact.html">Über uns</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="#">Versand & Rückgabe</a>
+            <a href="#">Datenschutz</a>
+        </div>
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Bleib informiert über neue Produkte & Aktionen.</p>
+            <a href="index.html#newsletter" class="btn-ghost btn-sm">Jetzt anmelden</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2025 SORA Korean Skincare</span>
+        <span>Made with 💛 in Zürich</span>
+    </div>
+</footer>
+
+<script>
+document.querySelectorAll('.product-card').forEach(function(card) {
+    var link = card.querySelector('.btn-ghost');
+    if (link) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('btn-ghost')) {
+                window.location.href = link.getAttribute('href');
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>

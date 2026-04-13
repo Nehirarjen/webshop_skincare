@@ -16,6 +16,7 @@
     <div class="header-inner">
         <nav class="nav-left">
             <a href="products.html" class="active">Produkte</a>
+            <a href="brands.html">Marken</a>
             <a href="contact.html">Kontakt</a>
         </nav>
         <a href="index.html" class="logo">SORA</a>
@@ -26,6 +27,9 @@
 </header>
 
 <main>
+
+    <!-- Anchor for modal close -->
+    <div id="products"></div>
 
     <!-- PAGE HERO -->
     <section class="page-hero">
@@ -42,25 +46,528 @@
     <!-- CATEGORY FILTER -->
     <section class="filter-bar">
         <div class="filter-inner">
-            <span class="filter-label">Filtern:</span>
+            <span class="filter-label">Kategorie:</span>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-cat="all">Alle</button>
-                <button class="filter-btn" data-cat="cleanser">Cleanser</button>
-                <button class="filter-btn" data-cat="toner">Toner</button>
-                <button class="filter-btn" data-cat="serum">Serum & Essenz</button>
-                <button class="filter-btn" data-cat="mask">Masken</button>
-                <button class="filter-btn" data-cat="moisturizer">Creme</button>
-                <button class="filter-btn" data-cat="spf">Sonnenschutz</button>
+                <a href="#all" class="filter-btn active">Alle</a>
+                <a href="#cleanser" class="filter-btn">Cleanser</a>
+                <a href="#toner" class="filter-btn">Toner</a>
+                <a href="#serum" class="filter-btn">Serum & Essenz</a>
+                <a href="#mask" class="filter-btn">Masken</a>
+                <a href="#moisturizer" class="filter-btn">Creme</a>
+                <a href="#spf" class="filter-btn">Sonnenschutz</a>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCTS GRID -->
-    <section class="section products-section">
-        <div class="products-grid products-grid--full" id="products-grid">
+    <!-- PRODUCTS GRID - CLEANSER -->
+    <section class="section products-section" id="cleanser">
+        <div class="section-header">
+            <h2 class="section-title">Cleanser</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/49/215/M_p0114021549.jpg?w=500&q=80" alt="SKIN1004 Light Cleansing Oil" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">Madagascar Centella Light Cleansing Oil</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 10.51</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
 
-            <!-- 1 -->
-            <article class="product-card" data-cat="serum" id="snail-mucin">
+            <article class="product-card">
+                <a href="product-detail.html#detail-med-1" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/79/407/M_p0180240779.jpg?w=500&q=80" alt="SKIN1004 Poremizing Foam" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Skin1004</span>
+                        <h3 class="product-name">Madagascar Centella Poremizing Deep Cleansing Foam</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 8.15</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/11/443/M_p0191844311.jpg?w=500&q=80" alt="ANUA Quercetinol Foam" />
+                        <span class="product-badge">Beliebt</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">Heartleaf Quercetinol Pore Deep Cleansing Foam</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 9.21</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-skin-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/30/375/M_p0211937530.jpg?w=500&q=80" alt="Arencia Fresh Green Rice" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Arencia</span>
+                        <h3 class="product-name">Fresh Green Rice Mochi Cleanser</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 8.83</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-round-lab-2" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/00/352/M_p0107035200.jpg?w=500&q=80" alt="ROUND LAB 1025 Dokdo" />
+                        <span class="product-badge">Beliebt</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ROUND LAB</span>
+                        <h3 class="product-name">1025 Dokdo Cleanser</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 9.80</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-cosrx" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/80/821/M_p0056482180.jpg?w=500&q=80" alt="COSRX Low pH" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">COSRX</span>
+                        <h3 class="product-name">Low pH Good Morning Gel Cleanser</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 9.51</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-boj-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/80/931/M_p0165993180.jpg?w=500&q=80" alt="Beauty of Joseon Green Plum" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Green Plum Refreshing Cleanser</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 8.25</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-heimish" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/57/967/M_p0125396757.jpg?w=500&q=80" alt="heimish All Clean Balm" />
+                        <span class="product-badge">Beliebt</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">heimish</span>
+                        <h3 class="product-name">All Clean Balm</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 12.49</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-mixsoon" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/08/611/M_p0185161108.jpg?w=500&q=80" alt="mixsoon Centella" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">mixsoon</span>
+                        <h3 class="product-name">Centella Cleansing Foam</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 8.88</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-haruharu" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/01/990/M_p0141099001.jpg?w=500&q=80" alt="haruharu wonder" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">haruharu wonder</span>
+                        <h3 class="product-name">Black Rice Moisture 5.5 Soft Cleansing Gel</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 7.84</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-6" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/28/372/M_p0185237228.jpg?w=500&q=80" alt="Anua Pore Control" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">Heartleaf Pore Control Cleansing Oil</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 11.54</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-etude" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/23/498/M_p0067949823.jpg?w=500&q=80" alt="ETUDE Soon Jung" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ETUDE</span>
+                        <h3 class="product-name">Soon Jung pH 6.5 Whip Cleanser</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 9.44</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID - TONER -->
+    <section class="section products-section" id="toner">
+        <div class="section-header">
+            <h2 class="section-title">Toner</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <a href="product-detail.html#detail-anua-1" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/79/407/M_p0180240779.jpg?w=500&q=80" alt="ANUA Heartleaf 77% Soothing Toner" />
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ANUA</span>
+                        <h3 class="product-name">Heartleaf 77% Soothing Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 18.90</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-boj-5" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/65/274/M_p01227465265.jpg?w=500&q=80" alt="Beauty of Joseon Ginseng Essence Water" />
+                        <span class="product-badge">Beliebt</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Ginseng Essence Water</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 14.40</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-torriden-6" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://torriden.us/cdn/shop/files/DIVEINSerum1_631ac0e3-a77b-422a-a806-bf34477cac19.jpg?w=500&q=80" alt="I'm from Rice Toner" />
+                        <span class="product-badge">Beliebt</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">I'm from</span>
+                        <h3 class="product-name">Rice Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 19.50</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-scinic" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/11/443/M_p0191844311.jpg?w=500&q=80" alt="SCINIC The Simple Calming Toner" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">SCINIC</span>
+                        <h3 class="product-name">The Simple Calming Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 13.50</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-round-lab" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/00/352/M_p0107035200.jpg?w=500&q=80" alt="ROUND LAB 1025 Dokdo Toner" />
+                        <span class="product-badge product-badge--new">Neu</span>
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">ROUND LAB</span>
+                        <h3 class="product-name">1025 Dokdo Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 16.20</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-pyunkang" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/28/372/M_p0185237228.jpg?w=500&q=80" alt="Pyunkang Yul Calming Deep Moisture Toner" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Pyunkang Yul</span>
+                        <h3 class="product-name">Calming Deep Moisture Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 16.19</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-benton" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/01/990/M_p0141099001.jpg?w=500&q=80" alt="Benton Aloe BHA Skin Toner" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Benton</span>
+                        <h3 class="product-name">Aloe BHA Skin Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 17.10</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <a href="product-detail.html#detail-boj-4" class="product-card__link">
+                    <div class="product-card__img">
+                        <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/80/931/M_p0165993180.jpg?w=500&q=80" alt="Beauty of Joseon Green Plum Refreshing Toner" />
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-brand">Beauty of Joseon</span>
+                        <h3 class="product-name">Green Plum Refreshing Toner</h3>
+                        <div class="product-footer">
+                            <span class="product-price">CHF 16.80</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID - SERUM -->
+    <section class="section products-section" id="serum">
+        <div class="section-header">
+            <h2 class="section-title">Serum & Essenz</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500&q=80" alt="Torriden Serum" />
+                    <span class="product-badge">Bestseller</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Dive-In Low Molecular Hyaluronic Acid Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.90</span>
+                        <a href="product-detail.html#detail-1" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="Beauty of Joseon Serum" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Relief Serum : Rice + Centella</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 26.50</span>
+                        <a href="product-detail.html#detail-2" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Medicube Serum" />
+                    <span class="product-badge">Beliebt</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Medicube</span>
+                    <h3 class="product-name">Deep VC 500mg Vitamin C Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 38.00</span>
+                        <a href="product-detail.html#detail-7" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=500&q=80" alt="Medicube Niacinamide" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Medicube</span>
+                    <h3 class="product-name">CICA-M 1% Niacinamide Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 32.00</span>
+                        <a href="product-detail.html#detail-12" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID - MASK -->
+    <section class="section products-section" id="mask">
+        <div class="section-header">
+            <h2 class="section-title">Masken</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=500&q=80" alt="Beauty of Joseon Glow Serum" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Deep Glow Serum : Green Tea + Alpha Arbutin</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 29.00</span>
+                        <a href="product-detail.html#detail-3" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=500&q=80" alt="Madagascar Centella Lotion" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Madagascar Centella</span>
+                    <h3 class="product-name">Tone Brightening Body Lotion</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 21.00</span>
+                        <a href="product-detail.html#detail-10" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID - MOISTURIZER -->
+    <section class="section products-section" id="moisturizer">
+        <div class="section-header">
+            <h2 class="section-title">Creme</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=500&q=80" alt="Madagascar Centella Cream" />
+                    <span class="product-badge">Klassiker</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Madagascar Centella</span>
+                    <h3 class="product-name">Centella Asiatica Skin Barrier Cream</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.00</span>
+                        <a href="product-detail.html#detail-6" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Beauty of Joseon Cream" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Dynasty Cream : Ginseng + Royal Jelly</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 42.00</span>
+                        <a href="product-detail.html#detail-4" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=500&q=80" alt="Torriden Emulsion" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Cell-In Hyaluronic Emulsion</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 28.00</span>
+                        <a href="product-detail.html#detail-11" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- PRODUCTS GRID - SPF -->
+    <section class="section products-section" id="spf">
+        <div class="section-header">
+            <h2 class="section-title">Sonnenschutz</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Beauty of Joseon Cream" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Dynasty Cream : Ginseng + Royal Jelly</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 42.00</span>
+                        <a href="product-detail.html#detail-4" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- BRAND: COSRX -->
+    <section class="section products-section" id="cosrx">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">COSRX</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
                 <div class="product-card__img">
                     <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500&q=80" alt="Snail Mucin Essence" />
                     <span class="product-badge">Bestseller</span>
@@ -70,60 +577,11 @@
                     <h3 class="product-name">Advanced Snail 96 Mucin Power Essence</h3>
                     <div class="product-footer">
                         <span class="product-price">CHF 24.90</span>
-                        <button class="btn-ghost open-detail" data-id="1">Details</button>
+                        <a href="product-detail.html#detail-1" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
-
-            <!-- 2 -->
-            <article class="product-card" data-cat="toner" id="miracle-toner">
-                <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="AHA BHA Toner" />
-                    <span class="product-badge product-badge--new">Neu</span>
-                </div>
-                <div class="product-card__body">
-                    <span class="product-brand">Some By Mi</span>
-                    <h3 class="product-name">AHA·BHA·PHA 30 Days Miracle Toner</h3>
-                    <div class="product-footer">
-                        <span class="product-price">CHF 19.50</span>
-                        <button class="btn-ghost open-detail" data-id="2">Details</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 3 -->
-            <article class="product-card" data-cat="mask" id="nmf-mask">
-                <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=500&q=80" alt="Sheet Mask" />
-                </div>
-                <div class="product-card__body">
-                    <span class="product-brand">Mediheal</span>
-                    <h3 class="product-name">N.M.F Aquaring Ampoule Mask</h3>
-                    <div class="product-footer">
-                        <span class="product-price">CHF 3.90</span>
-                        <button class="btn-ghost open-detail" data-id="3">Details</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 4 -->
-            <article class="product-card" data-cat="spf" id="sunscreen">
-                <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Sunscreen" />
-                    <span class="product-badge product-badge--new">Neu</span>
-                </div>
-                <div class="product-card__body">
-                    <span class="product-brand">Purito</span>
-                    <h3 class="product-name">Daily Go-To Sunscreen SPF50+</h3>
-                    <div class="product-footer">
-                        <span class="product-price">CHF 22.00</span>
-                        <button class="btn-ghost open-detail" data-id="4">Details</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 5 -->
-            <article class="product-card" data-cat="cleanser">
+            <article class="product-card">
                 <div class="product-card__img">
                     <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80" alt="Low pH Cleanser" />
                 </div>
@@ -132,28 +590,116 @@
                     <h3 class="product-name">Low pH Good Morning Gel Cleanser</h3>
                     <div class="product-footer">
                         <span class="product-price">CHF 16.80</span>
-                        <button class="btn-ghost open-detail" data-id="5">Details</button>
+                        <a href="product-detail.html#detail-5" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
-
-            <!-- 6 -->
-            <article class="product-card" data-cat="moisturizer">
+            <article class="product-card">
                 <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=500&q=80" alt="Moisturizer" />
+                    <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=500&q=80" alt="Water Gel Moisturizer" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">COSRX</span>
+                    <h3 class="product-name">Balancing Water Gel Moisturizer</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 26.00</span>
+                        <a href="product-detail.html#detail-11" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ALL PRODUCTS (default view) -->
+    <section class="section products-section" id="all">
+        <div class="section-header">
+            <h2 class="section-title">Alle Produkte</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="Miracle Toner" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Some By Mi</span>
+                    <h3 class="product-name">AHA·BHA·PHA 30 Days Miracle Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 19.50</span>
+                        <a href="product-detail.html#detail-2" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=500&q=80" alt="Niacinamide Serum" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Some By Mi</span>
+                    <h3 class="product-name">Niacinamide 10% Zinc Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 22.90</span>
+                        <a href="product-detail.html#detail-12" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- BRAND: Laneige -->
+    <section class="section products-section" id="laneige">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Laneige</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=500&q=80" alt="Water Sleeping Mask" />
                 </div>
                 <div class="product-card__body">
                     <span class="product-brand">Laneige</span>
                     <h3 class="product-name">Water Sleeping Mask</h3>
                     <div class="product-footer">
                         <span class="product-price">CHF 34.00</span>
-                        <button class="btn-ghost open-detail" data-id="6">Details</button>
+                        <a href="product-detail.html#detail-6" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
 
-            <!-- 7 -->
-            <article class="product-card" data-cat="serum">
+    <!-- BRAND: Innisfree -->
+    <section class="section products-section" id="innisfree">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Innisfree</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80" alt="Clay Mask" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Innisfree</span>
+                    <h3 class="product-name">Super Volcanic Pore Clay Mask</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 18.50</span>
+                        <a href="product-detail.html#detail-9" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- BRAND: Klairs -->
+    <section class="section products-section" id="klairs">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Klairs</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
                 <div class="product-card__img">
                     <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Vitamin C Serum" />
                     <span class="product-badge">Beliebt</span>
@@ -163,45 +709,47 @@
                     <h3 class="product-name">Freshly Juiced Vitamin C Drop Serum</h3>
                     <div class="product-footer">
                         <span class="product-price">CHF 29.90</span>
-                        <button class="btn-ghost open-detail" data-id="7">Details</button>
+                        <a href="product-detail.html#detail-7" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
 
-            <!-- 8 -->
-            <article class="product-card" data-cat="toner">
+    <!-- BRAND: Purito -->
+    <section class="section products-section" id="purito">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Purito</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
                 <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="Toner" />
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Sunscreen" />
+                    <span class="product-badge product-badge--new">Neu</span>
                 </div>
                 <div class="product-card__body">
-                    <span class="product-brand">Pyunkang Yul</span>
-                    <h3 class="product-name">Essence Toner</h3>
+                    <span class="product-brand">Purito</span>
+                    <h3 class="product-name">Daily Go-To Sunscreen SPF50+</h3>
                     <div class="product-footer">
-                        <span class="product-price">CHF 21.00</span>
-                        <button class="btn-ghost open-detail" data-id="8">Details</button>
+                        <span class="product-price">CHF 22.00</span>
+                        <a href="product-detail.html#detail-4" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
 
-            <!-- 9 -->
-            <article class="product-card" data-cat="mask">
+    <!-- BRAND: Heimish -->
+    <section class="section products-section" id="heimish">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Heimish</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
                 <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80" alt="Clay Mask" />
-                </div>
-                <div class="product-card__body">
-                    <span class="product-brand">Innisfree</span>
-                    <h3 class="product-name">Super Volcanic Pore Clay Mask</h3>
-                    <div class="product-footer">
-                        <span class="product-price">CHF 18.50</span>
-                        <button class="btn-ghost open-detail" data-id="9">Details</button>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 10 -->
-            <article class="product-card" data-cat="cleanser">
-                <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=500&q=80" alt="Cleansing Balm" />
+                    <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=500&q=80" alt="All Clean Balm" />
                     <span class="product-badge product-badge--new">Neu</span>
                 </div>
                 <div class="product-card__body">
@@ -209,104 +757,945 @@
                     <h3 class="product-name">All Clean Balm — Sherbet Texture</h3>
                     <div class="product-footer">
                         <span class="product-price">CHF 17.90</span>
-                        <button class="btn-ghost open-detail" data-id="10">Details</button>
+                        <a href="product-detail.html#detail-10" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
 
-            <!-- 11 -->
-            <article class="product-card" data-cat="moisturizer">
+    <!-- BRAND: Mediheal -->
+    <section class="section products-section" id="mediheal">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Mediheal</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
                 <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=500&q=80" alt="Cream" />
+                    <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=500&q=80" alt="NMF Mask" />
                 </div>
                 <div class="product-card__body">
-                    <span class="product-brand">COSRX</span>
-                    <h3 class="product-name">Balancing Water Gel Moisturizer</h3>
+                    <span class="product-brand">Mediheal</span>
+                    <h3 class="product-name">N.M.F Aquaring Ampoule Mask</h3>
                     <div class="product-footer">
-                        <span class="product-price">CHF 26.00</span>
-                        <button class="btn-ghost open-detail" data-id="11">Details</button>
+                        <span class="product-price">CHF 3.90</span>
+                        <a href="product-detail.html#detail-3" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
+        </div>
+    </section>
 
-            <!-- 12 -->
-            <article class="product-card" data-cat="serum">
+    <!-- BRAND: Pyunkang Yul -->
+    <section class="section products-section" id="pyunkangyul">
+        <div class="section-header">
+            <div class="section-label">Marke</div>
+            <h2 class="section-title">Pyunkang Yul</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
                 <div class="product-card__img">
-                    <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=500&q=80" alt="Niacinamide Serum" />
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="Essence Toner" />
                 </div>
                 <div class="product-card__body">
-                    <span class="product-brand">Some By Mi</span>
-                    <h3 class="product-name">Niacinamide 10% Zinc Serum</h3>
+                    <span class="product-brand">Pyunkang Yul</span>
+                    <h3 class="product-name">Essence Toner</h3>
                     <div class="product-footer">
-                        <span class="product-price">CHF 22.90</span>
-                        <button class="btn-ghost open-detail" data-id="12">Details</button>
+                        <span class="product-price">CHF 21.00</span>
+                        <a href="product-detail.html#detail-8" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ALL PRODUCTS (default view) -->
+    <section class="section products-section" id="all">
+        <div class="section-header">
+            <h2 class="section-title">Alle Produkte</h2>
+        </div>
+        <div class="products-grid products-grid--full">
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500&q=80" alt="Torriden Serum" />
+                    <span class="product-badge">Bestseller</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Dive-In Low Molecular Hyaluronic Acid Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.90</span>
+                        <a href="product-detail.html#detail-1" class="btn-ghost">Details</a>
                     </div>
                 </div>
             </article>
 
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=500&q=80" alt="Beauty of Joseon Serum" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Relief Serum : Rice + Centella</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 26.50</span>
+                        <a href="product-detail.html#detail-2" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&q=80" alt="Beauty of Joseon Cream" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Dynasty Cream : Ginseng + Royal Jelly</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 42.00</span>
+                        <a href="product-detail.html#detail-4" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Medicube Serum" />
+                    <span class="product-badge">Beliebt</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Medicube</span>
+                    <h3 class="product-name">CICA-M 1% Niacinamide Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 32.00</span>
+                        <a href="product-detail.html#detail-12" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="ANUA Toner" />
+                    <span class="product-badge product-badge--new">Neu</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">ANUA</span>
+                    <h3 class="product-name">Heartleaf 77% Soothing Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 18.90</span>
+                        <a href="product-detail.html#detail-8" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=500&q=80" alt="Madagascar Centella Cream" />
+                    <span class="product-badge">Klassiker</span>
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Madagascar Centella</span>
+                    <h3 class="product-name">Centella Asiatica Skin Barrier Cream</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 24.00</span>
+                        <a href="product-detail.html#detail-6" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=80" alt="Torriden Toner" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Balanceful Gradient Toner</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 19.80</span>
+                        <a href="product-detail.html#detail-5" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=500&q=80" alt="Beauty of Joseon Glow Serum" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Beauty of Joseon</span>
+                    <h3 class="product-name">Deep Glow Serum : Green Tea + Alpha Arbutin</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 29.00</span>
+                        <a href="product-detail.html#detail-3" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Medicube Vitamin C" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Medicube</span>
+                    <h3 class="product-name">Deep VC 500mg Vitamin C Serum</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 38.00</span>
+                        <a href="product-detail.html#detail-7" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&q=80" alt="ANUA Cleanser" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">ANUA</span>
+                    <h3 class="product-name">Heartleaf Quercetinol Foam Cleanser</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 16.50</span>
+                        <a href="product-detail.html#detail-9" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=500&q=80" alt="Madagascar Centella Lotion" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Madagascar Centella</span>
+                    <h3 class="product-name">Tone Brightening Body Lotion</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 21.00</span>
+                        <a href="product-detail.html#detail-10" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__img">
+                    <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=500&q=80" alt="Torriden Emulsion" />
+                </div>
+                <div class="product-card__body">
+                    <span class="product-brand">Torriden</span>
+                    <h3 class="product-name">Cell-In Hyaluronic Emulsion</h3>
+                    <div class="product-footer">
+                        <span class="product-price">CHF 28.00</span>
+                        <a href="product-detail.html#detail-11" class="btn-ghost">Details</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
 </main>
 
-<!-- PRODUCT DETAIL MODAL -->
-<div class="modal-overlay" id="modal-overlay">
-    <div class="modal" id="product-modal" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modal-close" aria-label="Schliessen">✕</button>
-        <div class="modal-inner">
+<!-- PRODUCT DETAIL MODALS (CSS-only using :target) -->
 
+<!-- Product 1: Torriden Dive-In -->
+<div class="modal-overlay" id="detail-1">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
             <div class="modal-media">
-                <img id="modal-img" src="" alt="" />
-                <div class="modal-video-wrap" id="modal-video-wrap">
-                    <iframe id="modal-video" src="" title="Produktvideo" frameborder="0" allowfullscreen></iframe>
+                <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=700&q=80" alt="Torriden Dive-In Serum" />
+                <div class="modal-video-wrap">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Produktvideo" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-
             <div class="modal-info">
-                <span class="product-brand" id="modal-brand"></span>
-                <h2 id="modal-title"></h2>
-                <span class="modal-price" id="modal-price"></span>
-
-                <div class="modal-desc" id="modal-desc"></div>
-
+                <span class="product-brand">Torriden</span>
+                <h2>Dive-In Low Molecular Hyaluronic Acid Serum</h2>
+                <span class="modal-price">CHF 24.90</span>
+                <div class="modal-desc">Das Dive-In Serum von Torriden enthält niedermolekulare Hyaluronsäure, die tief in die Haut eindringt und von innen heraus mit Feuchtigkeit versorgt. Die leichtgewichtige Gel-Textur zieht sofort ein und hinterlässt keinen klebrigen Film — perfekt für den beruhigenden Glow-Effekt.</div>
                 <div class="modal-ingredients">
                     <h4>Schlüsselinhaltsstoffe</h4>
-                    <div class="ingredient-tags" id="modal-ingredients"></div>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Low Molecular Hyaluronic Acid</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                        <span class="ingredient-tag">Madecassoside</span>
+                    </div>
                 </div>
-
-                <form class="order-form" id="order-form" action="#" method="post">
+                <form class="order-form" action="#" method="post">
                     <h4>Bestellen</h4>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="order-name">Vor- & Nachname</label>
-                            <input type="text" id="order-name" name="name" placeholder="Anna Müller" required />
+                            <label for="order-name-1">Vor- & Nachname</label>
+                            <input type="text" id="order-name-1" name="name" placeholder="Anna Müller" required />
                         </div>
                         <div class="form-group">
-                            <label for="order-email">E-Mail</label>
-                            <input type="email" id="order-email" name="email" placeholder="anna@email.ch" required />
+                            <label for="order-email-1">E-Mail</label>
+                            <input type="email" id="order-email-1" name="email" placeholder="anna@email.ch" required />
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group form-group--full">
-                            <label for="order-address">Lieferadresse</label>
-                            <input type="text" id="order-address" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                            <label for="order-address-1">Lieferadresse</label>
+                            <input type="text" id="order-address-1" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="order-qty">Anzahl</label>
-                            <input type="number" id="order-qty" name="qty" min="1" max="10" value="1" required />
+                            <label for="order-qty-1">Anzahl</label>
+                            <input type="number" id="order-qty-1" name="qty" min="1" max="10" value="1" required />
                         </div>
                         <div class="form-group">
-                            <label for="order-note">Bemerkung</label>
-                            <input type="text" id="order-note" name="note" placeholder="Optional" />
+                            <label for="order-note-1">Bemerkung</label>
+                            <input type="text" id="order-note-1" name="note" placeholder="Optional" />
                         </div>
                     </div>
-                    <input type="hidden" id="order-product" name="product" value="" />
+                    <input type="hidden" name="product" value="Torriden Dive-In Low Molecular Hyaluronic Acid Serum - CHF 24.90" />
                     <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
                     <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Product 2: Beauty of Joseon Relief Serum -->
+<div class="modal-overlay" id="detail-2">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=700&q=80" alt="Beauty of Joseon Relief Serum" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Beauty of Joseon</span>
+                <h2>Relief Serum : Rice + Centella</h2>
+                <span class="modal-price">CHF 26.50</span>
+                <div class="modal-desc">Das Relief Serum kombiniert fermentierten Reisextrakt mit Centella Asiatica für intensive Feuchtigkeit und Beruhigung. Die seidige Textur zieht schnell ein und stärkt die Hautbarriere — ideal für gereizte oder empfindliche Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Fermented Rice Extract</span>
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                        <span class="ingredient-tag">Allantoin</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-2">Vor- & Nachname</label>
+                            <input type="text" id="order-name-2" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-2">E-Mail</label>
+                            <input type="email" id="order-email-2" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-2">Lieferadresse</label>
+                            <input type="text" id="order-address-2" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-2">Anzahl</label>
+                            <input type="number" id="order-qty-2" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-2">Bemerkung</label>
+                            <input type="text" id="order-note-2" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Some By Mi AHA·BHA·PHA 30 Days Miracle Toner - CHF 19.50" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 3: NMF Mask -->
+<div class="modal-overlay" id="detail-3">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=700&q=80" alt="NMF Mask" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Mediheal</span>
+                <h2>N.M.F Aquaring Ampoule Mask</h2>
+                <span class="modal-price">CHF 3.90</span>
+                <div class="modal-desc">Koreas meistverkaufte Tuchmaske liefert in nur 20 Minuten einen kräftigen Feuchtigkeitsschub. Das N.M.F (Natural Moisturizing Factor) Komplex imitiert die natürliche Feuchtigkeitsversorgung der Haut und macht sie sofort weich und strahlend.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Sodium Hyaluronate</span>
+                        <span class="ingredient-tag">Betaine</span>
+                        <span class="ingredient-tag">Glycerin</span>
+                        <span class="ingredient-tag">Allantoin</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-3">Vor- & Nachname</label>
+                            <input type="text" id="order-name-3" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-3">E-Mail</label>
+                            <input type="email" id="order-email-3" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-3">Lieferadresse</label>
+                            <input type="text" id="order-address-3" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-3">Anzahl</label>
+                            <input type="number" id="order-qty-3" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-3">Bemerkung</label>
+                            <input type="text" id="order-note-3" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Mediheal N.M.F Aquaring Ampoule Mask - CHF 3.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 4: Sunscreen -->
+<div class="modal-overlay" id="detail-4">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=700&q=80" alt="Sunscreen" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Purito</span>
+                <h2>Daily Go-To Sunscreen SPF50+</h2>
+                <span class="modal-price">CHF 22.00</span>
+                <div class="modal-desc">Dieser leichte Sonnenschutz mit LSF 50+ hinterlässt keinen weissen Schleier und lässt sich perfekt als letzter Schritt in die Pflegeroutine integrieren. Dank der dünnflüssigen Textur trocknet er schnell ab und ist ideal unter Make-up.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Zinc Oxide</span>
+                        <span class="ingredient-tag">Niacinamide</span>
+                        <span class="ingredient-tag">Centella Asiatica</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-4">Vor- & Nachname</label>
+                            <input type="text" id="order-name-4" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-4">E-Mail</label>
+                            <input type="email" id="order-email-4" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-4">Lieferadresse</label>
+                            <input type="text" id="order-address-4" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-4">Anzahl</label>
+                            <input type="number" id="order-qty-4" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-4">Bemerkung</label>
+                            <input type="text" id="order-note-4" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Purito Daily Go-To Sunscreen SPF50+ - CHF 22.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 5: Low pH Cleanser -->
+<div class="modal-overlay" id="detail-5">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=700&q=80" alt="Low pH Cleanser" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">COSRX</span>
+                <h2>Low pH Good Morning Gel Cleanser</h2>
+                <span class="modal-price">CHF 16.80</span>
+                <div class="modal-desc">Dieser pH-optimierte Morgenreiniger (pH 5.0) entfernt sanft Talg und Verunreinigungen ohne die Hautbarriere zu stören. Mit Teebaumöl und Salicylsäure wirkt er porenverfeinernder und antibakteriell – ideal für Mischhaut und unreine Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Salicylic Acid 0.5%</span>
+                        <span class="ingredient-tag">Tea Tree Oil</span>
+                        <span class="ingredient-tag">Xanthan Gum</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-5">Vor- & Nachname</label>
+                            <input type="text" id="order-name-5" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-5">E-Mail</label>
+                            <input type="email" id="order-email-5" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-5">Lieferadresse</label>
+                            <input type="text" id="order-address-5" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-5">Anzahl</label>
+                            <input type="number" id="order-qty-5" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-5">Bemerkung</label>
+                            <input type="text" id="order-note-5" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="COSRX Low pH Good Morning Gel Cleanser - CHF 16.80" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 6: Water Sleeping Mask -->
+<div class="modal-overlay" id="detail-6">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1601049541271-25cf92149661?w=700&q=80" alt="Water Sleeping Mask" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Laneige</span>
+                <h2>Water Sleeping Mask</h2>
+                <span class="modal-price">CHF 34.00</span>
+                <div class="modal-desc">Die ikonische Schlafmaske von Laneige bildet über Nacht einen atmungsaktiven Feuchtigkeitsfilm auf der Haut. Morgens erwacht man mit sichtbar praller, strahlendem Teint. Besonders für trockene und gestresste Haut ein absoluter Gamechanger.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">WATER SLEEPING™ Technology</span>
+                        <span class="ingredient-tag">Sleepscent™</span>
+                        <span class="ingredient-tag">Mineral Water</span>
+                        <span class="ingredient-tag">Apricot Extract</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-6">Vor- & Nachname</label>
+                            <input type="text" id="order-name-6" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-6">E-Mail</label>
+                            <input type="email" id="order-email-6" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-6">Lieferadresse</label>
+                            <input type="text" id="order-address-6" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-6">Anzahl</label>
+                            <input type="number" id="order-qty-6" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-6">Bemerkung</label>
+                            <input type="text" id="order-note-6" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Laneige Water Sleeping Mask - CHF 34.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 7: Vitamin C Serum -->
+<div class="modal-overlay" id="detail-7">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=700&q=80" alt="Vitamin C Serum" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Klairs</span>
+                <h2>Freshly Juiced Vitamin C Drop Serum</h2>
+                <span class="modal-price">CHF 29.90</span>
+                <div class="modal-desc">Das 5% Vitamin C Serum von Klairs ist mild genug für empfindliche Haut und trotzdem hochwirksam. Es hellt Pigmentflecken auf, schützt vor freien Radikalen und verleiht dem Teint ein gesundes Glow. Ideal für den Einstieg in Vitamin-C-Pflege.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Ascorbic Acid 5%</span>
+                        <span class="ingredient-tag">Sodium Hyaluronate</span>
+                        <span class="ingredient-tag">Squalane</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-7">Vor- & Nachname</label>
+                            <input type="text" id="order-name-7" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-7">E-Mail</label>
+                            <input type="email" id="order-email-7" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-7">Lieferadresse</label>
+                            <input type="text" id="order-address-7" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-7">Anzahl</label>
+                            <input type="number" id="order-qty-7" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-7">Bemerkung</label>
+                            <input type="text" id="order-note-7" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Klairs Freshly Juiced Vitamin C Drop Serum - CHF 29.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 8: Essence Toner -->
+<div class="modal-overlay" id="detail-8">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=700&q=80" alt="Essence Toner" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Pyunkang Yul</span>
+                <h2>Essence Toner</h2>
+                <span class="modal-price">CHF 21.00</span>
+                <div class="modal-desc">Der Essence Toner von Pyunkang Yul enthält satte 91.3% Astragalus Membranaceus Root Extract – bekannt für seine hautstärkenden und feuchtigkeitsbindenden Eigenschaften. Die ölige Textur nährt die Haut intensiv, ohne zu fetten.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Astragalus Root Extract 91.3%</span>
+                        <span class="ingredient-tag">Glycerin</span>
+                        <span class="ingredient-tag">Butylene Glycol</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-8">Vor- & Nachname</label>
+                            <input type="text" id="order-name-8" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-8">E-Mail</label>
+                            <input type="email" id="order-email-8" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-8">Lieferadresse</label>
+                            <input type="text" id="order-address-8" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-8">Anzahl</label>
+                            <input type="number" id="order-qty-8" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-8">Bemerkung</label>
+                            <input type="text" id="order-note-8" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Pyunkang Yul Essence Toner - CHF 21.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 9: Clay Mask -->
+<div class="modal-overlay" id="detail-9">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=80" alt="Clay Mask" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Innisfree</span>
+                <h2>Super Volcanic Pore Clay Mask</h2>
+                <span class="modal-price">CHF 18.50</span>
+                <div class="modal-desc">Die porenreinigende Vulkan-Ton-Maske von Innisfree nutzt natürlichen Vulkanascheextrakt aus Jeju Island, um Talg zu absorbieren und Poren sichtbar zu verfeinern. 2x wöchentlich anwenden für glattere, mattierte Haut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Jeju Volcanic Ash</span>
+                        <span class="ingredient-tag">Kaolin</span>
+                        <span class="ingredient-tag">Silica</span>
+                        <span class="ingredient-tag">Glycerin</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-9">Vor- & Nachname</label>
+                            <input type="text" id="order-name-9" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-9">E-Mail</label>
+                            <input type="email" id="order-email-9" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-9">Lieferadresse</label>
+                            <input type="text" id="order-address-9" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-9">Anzahl</label>
+                            <input type="number" id="order-qty-9" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-9">Bemerkung</label>
+                            <input type="text" id="order-note-9" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Innisfree Super Volcanic Pore Clay Mask - CHF 18.50" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 10: All Clean Balm -->
+<div class="modal-overlay" id="detail-10">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80" alt="All Clean Balm" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Heimish</span>
+                <h2>All Clean Balm — Sherbet Texture</h2>
+                <span class="modal-price">CHF 17.90</span>
+                <div class="modal-desc">Dieses Reinigungsbalm in Sherbet-Textur schmilzt beim Auftragen zu einem seidigen Öl und löst selbst wasserfestes Make-up, Sonnencreme und Umweltverschmutzung rückstandslos auf. Die perfekte erste Reinigung für Double Cleansing.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">White Lotus Extract</span>
+                        <span class="ingredient-tag">Sweet Almond Oil</span>
+                        <span class="ingredient-tag">Vitamin E</span>
+                        <span class="ingredient-tag">Bergamot Oil</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-10">Vor- & Nachname</label>
+                            <input type="text" id="order-name-10" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-10">E-Mail</label>
+                            <input type="email" id="order-email-10" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-10">Lieferadresse</label>
+                            <input type="text" id="order-address-10" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-10">Anzahl</label>
+                            <input type="number" id="order-qty-10" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-10">Bemerkung</label>
+                            <input type="text" id="order-note-10" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Heimish All Clean Balm - CHF 17.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 11: Water Gel Moisturizer -->
+<div class="modal-overlay" id="detail-11">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1527799820374-87036083acf8?w=700&q=80" alt="Water Gel Moisturizer" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">COSRX</span>
+                <h2>Balancing Water Gel Moisturizer</h2>
+                <span class="modal-price">CHF 26.00</span>
+                <div class="modal-desc">Dieser leichte Wassergelcreme reguliert den Feuchtigkeitshaushalt der Haut und hinterlässt ein frisches, nicht fettiges Hautgefühl. Mit Birch-Extrakt und Hyaluronsäure für langanhaltende Hydration – ideal für Mischhaut.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Birch Juice 71.6%</span>
+                        <span class="ingredient-tag">Sodium Hyaluronate</span>
+                        <span class="ingredient-tag">Beta-Glucan</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-11">Vor- & Nachname</label>
+                            <input type="text" id="order-name-11" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-11">E-Mail</label>
+                            <input type="email" id="order-email-11" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-11">Lieferadresse</label>
+                            <input type="text" id="order-address-11" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-11">Anzahl</label>
+                            <input type="number" id="order-qty-11" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-11">Bemerkung</label>
+                            <input type="text" id="order-note-11" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="COSRX Balancing Water Gel Moisturizer - CHF 26.00" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 12: Niacinamide Serum -->
+<div class="modal-overlay" id="detail-12">
+    <div class="modal">
+        <a href="#products" class="modal-close" aria-label="Schliessen">✕</a>
+        <div class="modal-inner">
+            <div class="modal-media">
+                <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=700&q=80" alt="Niacinamide Serum" />
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">Some By Mi</span>
+                <h2>Niacinamide 10% Zinc Serum</h2>
+                <span class="modal-price">CHF 22.90</span>
+                <div class="modal-desc">Das hochkonzentrierte Niacinamid-Serum mit Zink minimiert Poren, reguliert Talgproduktion und hellt gleichzeitig Pigmentflecken auf. Ein Multitalent für unreine, ölige oder fahle Haut – gut verträglich und dermatologisch getestet.</div>
+                <div class="modal-ingredients">
+                    <h4>Schlüsselinhaltsstoffe</h4>
+                    <div class="ingredient-tags">
+                        <span class="ingredient-tag">Niacinamide 10%</span>
+                        <span class="ingredient-tag">Zinc PCA</span>
+                        <span class="ingredient-tag">Panthenol</span>
+                        <span class="ingredient-tag">Allantoin</span>
+                    </div>
+                </div>
+                <form class="order-form" action="#" method="post">
+                    <h4>Bestellen</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-name-12">Vor- & Nachname</label>
+                            <input type="text" id="order-name-12" name="name" placeholder="Anna Müller" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-email-12">E-Mail</label>
+                            <input type="email" id="order-email-12" name="email" placeholder="anna@email.ch" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group form-group--full">
+                            <label for="order-address-12">Lieferadresse</label>
+                            <input type="text" id="order-address-12" name="address" placeholder="Musterstrasse 1, 8000 Zürich" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="order-qty-12">Anzahl</label>
+                            <input type="number" id="order-qty-12" name="qty" min="1" max="10" value="1" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="order-note-12">Bemerkung</label>
+                            <input type="text" id="order-note-12" name="note" placeholder="Optional" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="product" value="Some By Mi Niacinamide 10% Zinc Serum - CHF 22.90" />
+                    <button type="submit" class="btn-primary btn-full">Jetzt bestellen</button>
+                    <p class="form-legal">Kostenloser Versand ab CHF 50. Lieferung in 3–5 Werktagen.</p>
+                </form>
             </div>
         </div>
     </div>
@@ -322,9 +1711,9 @@
         <div class="footer-links">
             <h4>Shop</h4>
             <a href="products.html">Alle Produkte</a>
-            <a href="products.html?cat=serum">Seren</a>
-            <a href="products.html?cat=mask">Masken</a>
-            <a href="products.html?cat=spf">Sonnenschutz</a>
+            <a href="products.html#serum">Seren</a>
+            <a href="products.html#mask">Masken</a>
+            <a href="products.html#spf">Sonnenschutz</a>
         </div>
         <div class="footer-links">
             <h4>Info</h4>
@@ -346,192 +1735,17 @@
 </footer>
 
 <script>
-    // ── Product data ──────────────────────────────────────────────────────────
-    const products = {
-        1: {
-            brand: 'COSRX',
-            name: 'Advanced Snail 96 Mucin Power Essence',
-            price: 'CHF 24.90',
-            img: 'https://images.unsplash.com/photo-1617897903246-719242758050?w=700&q=80',
-            video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            desc: 'Die Advanced Snail 96 Mucin Power Essence von COSRX enthält 96% Schneckensekret-Filtrat und ist das meistverkaufte K-Beauty Serum weltweit. Sie stärkt die Hautbarriere, reduziert Rötungen und spendet langanhaltende Feuchtigkeit – für sichtbar glattere, strahlende Haut.',
-            ingredients: ['Snail Secretion Filtrate 96%', 'Betaine', 'Sodium Hyaluronate']
-        },
-        2: {
-            brand: 'Some By Mi',
-            name: 'AHA·BHA·PHA 30 Days Miracle Toner',
-            price: 'CHF 19.50',
-            img: 'https://images.unsplash.com/photo-1600428853876-fb5c464e187c?w=700&q=80',
-            video: '',
-            desc: 'Der Miracle Toner kombiniert drei Exfoliationssäuren (AHA, BHA, PHA) für eine effektive und gleichzeitig schonende Hauterneuerung. Bereits nach 30 Tagen regelmässiger Anwendung ist das Hautbild sichtbar ebenmässiger und die Poren wirken verfeinert.',
-            ingredients: ['AHA (Glycolsäure)', 'BHA (Salicylsäure)', 'PHA (Gluconolacton)', 'Tea Tree Extract']
-        },
-        3: {
-            brand: 'Mediheal',
-            name: 'N.M.F Aquaring Ampoule Mask',
-            price: 'CHF 3.90',
-            img: 'https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=700&q=80',
-            video: '',
-            desc: 'Koreas meistverkaufte Tuchmaske liefert in nur 20 Minuten einen kräftigen Feuchtigkeitsschub. Das N.M.F (Natural Moisturizing Factor) Komplex imitiert die natürliche Feuchtigkeitsversorgung der Haut und macht sie sofort weich und strahlend.',
-            ingredients: ['Sodium Hyaluronate', 'Betaine', 'Glycerin', 'Allantoin']
-        },
-        4: {
-            brand: 'Purito',
-            name: 'Daily Go-To Sunscreen SPF50+',
-            price: 'CHF 22.00',
-            img: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=700&q=80',
-            video: '',
-            desc: 'Dieser leichte Sonnenschutz mit LSF 50+ hinterlässt keinen weissen Schleier und lässt sich perfekt als letzter Schritt in die Pflegeroutine integrieren. Dank der dünnflüssigen Textur trocknet er schnell ab und ist ideal unter Make-up.',
-            ingredients: ['Zinc Oxide', 'Niacinamide', 'Centella Asiatica', 'Panthenol']
-        },
-        5: {
-            brand: 'COSRX',
-            name: 'Low pH Good Morning Gel Cleanser',
-            price: 'CHF 16.80',
-            img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=700&q=80',
-            video: '',
-            desc: 'Dieser pH-optimierte Morgenreiniger (pH 5.0) entfernt sanft Talg und Verunreinigungen ohne die Hautbarriere zu stören. Mit Teebaumöl und Salicylsäure wirkt er porenverfeinernder und antibakteriell – ideal für Mischhaut und unreine Haut.',
-            ingredients: ['Salicylic Acid 0.5%', 'Tea Tree Oil', 'Xanthan Gum']
-        },
-        6: {
-            brand: 'Laneige',
-            name: 'Water Sleeping Mask',
-            price: 'CHF 34.00',
-            img: 'https://images.unsplash.com/photo-1601049541271-25cf92149661?w=700&q=80',
-            video: '',
-            desc: 'Die ikonische Schlafmaske von Laneige bildet über Nacht einen atmungsaktiven Feuchtigkeitsfilm auf der Haut. Morgens erwacht man mit sichtbar praller, strahlendem Teint. Besonders für trockene und gestresste Haut ein absoluter Gamechanger.',
-            ingredients: ['WATER SLEEPING™ Technology', 'Sleepscent™', 'Mineral Water', 'Apricot Extract']
-        },
-        7: {
-            brand: 'Klairs',
-            name: 'Freshly Juiced Vitamin C Drop Serum',
-            price: 'CHF 29.90',
-            img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=700&q=80',
-            video: '',
-            desc: 'Das 5% Vitamin C Serum von Klairs ist mild genug für empfindliche Haut und trotzdem hochwirksam. Es hellt Pigmentflecken auf, schützt vor freien Radikalen und verleiht dem Teint ein gesundes Glow. Ideal für den Einstieg in Vitamin-C-Pflege.',
-            ingredients: ['Ascorbic Acid 5%', 'Sodium Hyaluronate', 'Squalane']
-        },
-        8: {
-            brand: 'Pyunkang Yul',
-            name: 'Essence Toner',
-            price: 'CHF 21.00',
-            img: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=700&q=80',
-            video: '',
-            desc: 'Der Essence Toner von Pyunkang Yul enthält satte 91.3% Astragalus Membranaceus Root Extract – bekannt für seine hautstärkenden und feuchtigkeitsbindenden Eigenschaften. Die ölige Textur nährt die Haut intensiv, ohne zu fetten.',
-            ingredients: ['Astragalus Root Extract 91.3%', 'Glycerin', 'Butylene Glycol']
-        },
-        9: {
-            brand: 'Innisfree',
-            name: 'Super Volcanic Pore Clay Mask',
-            price: 'CHF 18.50',
-            img: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=80',
-            video: '',
-            desc: 'Die porenreinigende Vulkan-Ton-Maske von Innisfree nutzt natürlichen Vulkanascheextrakt aus Jeju Island, um Talg zu absorbieren und Poren sichtbar zu verfeinern. 2x wöchentlich anwenden für glattere, mattierte Haut.',
-            ingredients: ['Jeju Volcanic Ash', 'Kaolin', 'Silica', 'Glycerin']
-        },
-        10: {
-            brand: 'Heimish',
-            name: 'All Clean Balm — Sherbet Texture',
-            price: 'CHF 17.90',
-            img: 'https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80',
-            video: '',
-            desc: 'Dieses Reinigungsbalm in Sherbet-Textur schmilzt beim Auftragen zu einem seidigen Öl und löst selbst wasserfestes Make-up, Sonnencreme und Umweltverschmutzung rückstandslos auf. Die perfekte erste Reinigung für Double Cleansing.',
-            ingredients: ['White Lotus Extract', 'Sweet Almond Oil', 'Vitamin E', 'Bergamot Oil']
-        },
-        11: {
-            brand: 'COSRX',
-            name: 'Balancing Water Gel Moisturizer',
-            price: 'CHF 26.00',
-            img: 'https://images.unsplash.com/photo-1527799820374-87036083acf8?w=700&q=80',
-            video: '',
-            desc: 'Dieser leichte Wassergelcreme reguliert den Feuchtigkeitshaushalt der Haut und hinterlässt ein frisches, nicht fettiges Hautgefühl. Mit Birch-Extrakt und Hyaluronsäure für langanhaltende Hydration – ideal für Mischhaut.',
-            ingredients: ['Birch Juice 71.6%', 'Sodium Hyaluronate', 'Beta-Glucan']
-        },
-        12: {
-            brand: 'Some By Mi',
-            name: 'Niacinamide 10% Zinc Serum',
-            price: 'CHF 22.90',
-            img: 'https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=700&q=80',
-            video: '',
-            desc: 'Das hochkonzentrierte Niacinamid-Serum mit Zink minimiert Poren, reguliert Talgproduktion und hellt gleichzeitig Pigmentflecken auf. Ein Multitalent für unreine, ölige oder fahle Haut – gut verträglich und dermatologisch getestet.',
-            ingredients: ['Niacinamide 10%', 'Zinc PCA', 'Panthenol', 'Allantoin']
-        }
-    };
-
-    // ── Filter logic ──────────────────────────────────────────────────────────
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('#products-grid .product-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const cat = btn.dataset.cat;
-            cards.forEach(card => {
-                card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
-            });
+document.querySelectorAll('.product-card').forEach(function(card) {
+    var link = card.querySelector('.btn-ghost');
+    if (link) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('btn-ghost')) {
+                window.location.href = link.getAttribute('href');
+            }
         });
-    });
-
-    // ── URL param filter ──────────────────────────────────────────────────────
-    const params = new URLSearchParams(window.location.search);
-    const catParam = params.get('cat');
-    if (catParam) {
-        const matchBtn = document.querySelector(`.filter-btn[data-cat="${catParam}"]`);
-        if (matchBtn) matchBtn.click();
     }
-
-    // ── Modal logic ───────────────────────────────────────────────────────────
-    const overlay = document.getElementById('modal-overlay');
-    const modal = document.getElementById('product-modal');
-    const closeBtn = document.getElementById('modal-close');
-
-    function openModal(id) {
-        const p = products[id];
-        if (!p) return;
-        document.getElementById('modal-img').src = p.img;
-        document.getElementById('modal-img').alt = p.name;
-        document.getElementById('modal-brand').textContent = p.brand;
-        document.getElementById('modal-title').textContent = p.name;
-        document.getElementById('modal-price').textContent = p.price;
-        document.getElementById('modal-desc').textContent = p.desc;
-        document.getElementById('order-product').value = p.name;
-
-        const tags = document.getElementById('modal-ingredients');
-        tags.innerHTML = p.ingredients.map(i => `<span class="ingredient-tag">${i}</span>`).join('');
-
-        const videoWrap = document.getElementById('modal-video-wrap');
-        const videoEl = document.getElementById('modal-video');
-        if (p.video) {
-            videoEl.src = p.video;
-            videoWrap.style.display = 'block';
-        } else {
-            videoEl.src = '';
-            videoWrap.style.display = 'none';
-        }
-
-        overlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-        document.getElementById('modal-video').src = '';
-    }
-
-    document.querySelectorAll('.open-detail').forEach(btn => {
-        btn.addEventListener('click', () => openModal(btn.dataset.id));
-    });
-    closeBtn.addEventListener('click', closeModal);
-    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-    // ── Order form submit ─────────────────────────────────────────────────────
-    document.getElementById('order-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        this.innerHTML = '<div class="order-success"><span>✓</span><p>Bestellung eingegangen!<br/>Wir melden uns per E-Mail.</p></div>';
-    });
+});
 </script>
 
 </body>
