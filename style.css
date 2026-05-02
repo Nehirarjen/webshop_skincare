@@ -1037,9 +1037,10 @@ html { scroll-behavior: smooth; }
 
 /* Mobile (≤ 640px) */
 @media (max-width: 640px) {
-    .header-inner { grid-template-columns: auto 1fr; }
+    .header-inner { grid-template-columns: 1fr auto; }
     .nav-right { display: none; }
     .nav-left { gap: 1rem; }
+    .logo { order: 2; }
     .hero-content { padding: 3rem 1.4rem 1.5rem; }
     .hero-image { padding: 0 1.4rem 2.5rem; }
     .products-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }

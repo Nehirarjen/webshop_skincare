@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUNA — Styleguide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --ivory: #faf7f2; --cream: #f2ede4; --sand: #e8dfd0;
+            --blush: #e8c4b0; --rose: #c9826b; --bark: #5c3d2e;
+            --charcoal: #1e1a17; --mid: #7a6a5e; --light: #b0a093;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+            --radius-sm: 6px; --radius-md: 14px; --radius-lg: 24px; --radius-xl: 40px;
+            --shadow-soft: 0 4px 24px rgba(92,61,46,0.10);
+            --shadow-card: 0 2px 12px rgba(92,61,46,0.08);
+            --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; }
+        body { background: var(--ivory); color: var(--charcoal); font-family: var(--font-body); font-weight: 300; line-height: 1.65; padding: 3rem 2rem; }
+        .styleguide { max-width: 1100px; margin: 0 auto; }
+        .sg-header { text-align: center; padding: 3rem 0 4rem; border-bottom: 1px solid var(--sand); margin-bottom: 4rem; }
+        .sg-header h1 { font-family: var(--font-display); font-size: 3.5rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: var(--charcoal); }
+        .sg-header p { margin-top: 0.8rem; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); }
+        .sg-section { margin-bottom: 4rem; }
+        .sg-section-title { font-family: var(--font-body); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rose); margin-bottom: 2rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--sand); }
+        .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1.5rem; }
+        .color-card { border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-card); background: #fff; transition: transform var(--transition); }
+        .color-card:hover { transform: translateY(-3px); }
+        .color-swatch { height: 120px; border-bottom: 1px solid var(--sand); }
+        .color-info { padding: 0.9rem 1rem; }
+        .color-name { font-size: 0.82rem; font-weight: 500; color: var(--charcoal); }
+        .color-hex { font-size: 0.72rem; color: var(--light); font-family: monospace; margin-top: 0.2rem; }
+        .color-var { font-size: 0.68rem; color: var(--mid); font-family: monospace; margin-top: 0.15rem; }
+        .type-specimen { margin-bottom: 2.5rem; padding: 2rem; background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-card); }
+        .type-meta { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); margin-bottom: 1rem; }
+        .type-meta strong { color: var(--mid); }
+        .type-row { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.2rem; flex-wrap: wrap; }
+        .type-label { font-size: 0.68rem; font-family: monospace; color: var(--light); min-width: 80px; }
+        h1 { font-size: clamp(2.8rem, 7vw, 6rem); }
+        h2 { font-size: clamp(2rem, 4.5vw, 3.5rem); }
+        h3 { font-size: 1.3rem; font-weight: 400; }
+        h4 { font-size: 1.05rem; font-weight: 400; }
+        .type-body-regular { font-size: 0.95rem; line-height: 1.65; color: var(--mid); }
+        .type-body-small { font-size: 0.82rem; line-height: 1.6; color: var(--light); }
+        .type-label-ss { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--rose); }
+        em { font-style: italic; color: var(--rose); }
+        .button-row { display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center; }
+        .btn-primary { display: inline-block; background: var(--bark); color: var(--ivory); padding: 0.85rem 2.2rem; border-radius: var(--radius-xl); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; border: none; font-family: var(--font-body); cursor: pointer; transition: background var(--transition), transform var(--transition); }
+        .btn-primary:hover { background: var(--rose); transform: translateY(-1px); }
+        .btn-ghost { display: inline-block; background: transparent; color: var(--bark); padding: 0.6rem 1.4rem; border-radius: var(--radius-xl); font-size: 0.82rem; font-weight: 500; border: 1.5px solid var(--sand); font-family: var(--font-body); cursor: pointer; transition: border-color var(--transition), background var(--transition); }
+        .btn-ghost:hover { border-color: var(--bark); background: var(--cream); }
+        .btn-outline { display: inline-block; background: transparent; color: var(--ivory); padding: 0.85rem 2.2rem; border-radius: var(--radius-xl); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; border: 1.5px solid var(--bark); font-family: var(--font-body); cursor: pointer; transition: background var(--transition), border-color var(--transition); }
+        .btn-outline:hover { background: var(--bark); border-color: var(--bark); color: var(--ivory); }
+        .btn-full { width: 100%; text-align: center; }
+        .btn-sm { padding: 0.5rem 1.2rem; font-size: 0.78rem; }
+        .radius-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .radius-item { text-align: center; }
+        .radius-box { width: 100px; height: 100px; background: var(--cream); border: 1px solid var(--sand); margin-bottom: 0.6rem; }
+        .radius-label { font-size: 0.72rem; color: var(--light); font-family: monospace; }
+        .shadow-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .shadow-item { text-align: center; }
+        .shadow-box { width: 140px; height: 90px; background: #fff; border-radius: var(--radius-md); margin-bottom: 0.6rem; }
+        .shadow-label { font-size: 0.72rem; color: var(--light); font-family: monospace; }
+        .transition-demo { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+        .transition-box { width: 80px; height: 80px; background: var(--blush); border-radius: var(--radius-md); transition: transform var(--transition), background var(--transition); cursor: pointer; }
+        .transition-box:hover { transform: scale(1.1); background: var(--rose); }
+        .transition-label { font-size: 0.72rem; color: var(--light); margin-top: 0.5rem; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="styleguide">
+    <div class="sg-header"><h1>SUNA</h1><p>Design System &amp; Styleguide</p></div>
+    <div class="sg-section">
+        <div class="sg-section-title">Farbpalette</div>
+        <div class="color-grid">
+            <div class="color-card"><div class="color-swatch" style="background:#faf7f2"></div><div class="color-info"><div class="color-name">Ivory</div><div class="color-hex">#FAF7F2</div><div class="color-var">--ivory</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#f2ede4"></div><div class="color-info"><div class="color-name">Cream</div><div class="color-hex">#F2EDE4</div><div class="color-var">--cream</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#e8dfd0"></div><div class="color-info"><div class="color-name">Sand</div><div class="color-hex">#E8DFD0</div><div class="color-var">--sand</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#e8c4b0"></div><div class="color-info"><div class="color-name">Blush</div><div class="color-hex">#E8C4B0</div><div class="color-var">--blush</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#c9826b"></div><div class="color-info"><div class="color-name">Rose</div><div class="color-hex">#C9826B</div><div class="color-var">--rose</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#5c3d2e"></div><div class="color-info"><div class="color-name">Bark</div><div class="color-hex">#5C3D2E</div><div class="color-var">--bark</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#1e1a17"></div><div class="color-info"><div class="color-name">Charcoal</div><div class="color-hex">#1E1A17</div><div class="color-var">--charcoal</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#7a6a5e"></div><div class="color-info"><div class="color-name">Mid</div><div class="color-hex">#7A6A5E</div><div class="color-var">--mid</div></div></div>
+            <div class="color-card"><div class="color-swatch" style="background:#b0a093"></div><div class="color-info"><div class="color-name">Light</div><div class="color-hex">#B0A093</div><div class="color-var">--light</div></div></div>
+        </div>
+    </div>
+    <div class="sg-section">
+        <div class="sg-section-title">Typografie</div>
+        <div class="type-specimen">
+            <div class="type-meta"><strong>Display:</strong> Cormorant Garamond — Georgia, serif</div>
+            <div class="type-row"><span class="type-label">h1</span><h1>Pflege, die <em>leuchtet.</em></h1></div>
+            <div class="type-row"><span class="type-label">h2</span><h2>Frisch eingetroffen</h2></div>
+            <div class="type-row"><span class="type-label">h3</span><h3>Madagascar Centella</h3></div>
+            <div class="type-row"><span class="type-label">h4</span><h4>Schlüssel&shy;inhaltsstoffe</h4></div>
+        </div>
+        <div class="type-specimen">
+            <div class="type-meta"><strong>Body:</strong> DM Sans — system-ui, sans-serif</div>
+            <div class="type-row"><span class="type-label">body</span><p class="type-body-regular">Kuratierte K-Beauty Essenzen, Seren &amp; Masken für strahlend gesunde Haut — direkt aus Korea.</p></div>
+            <div class="type-row"><span class="type-label">small</span><p class="type-body-small">Kostenloser Versand ab CHF 50. 30 Tage Rückgaberecht.</p></div>
+            <div class="type-row"><span class="type-label">label</span><span class="type-label-ss">Sortiment</span></div>
+            <div class="type-row"><span class="type-label">em</span><p>Weniger, aber <em>richtiger.</em></p></div>
+        </div>
+    </div>
+    <div class="sg-section">
+        <div class="sg-section-title">Buttons</div>
+        <div class="button-row">
+            <button class="btn-primary">Primary</button>
+            <button class="btn-ghost">Ghost</button>
+            <button class="btn-outline">Outline</button>
+            <button class="btn-primary btn-sm">Small</button>
+            <button class="btn-primary btn-full" style="max-width:280px">Full Width</button>
+        </div>
+    </div>
+    <div class="sg-section">
+        <div class="sg-section-title">Border Radius</div>
+        <div class="radius-grid">
+            <div class="radius-item"><div class="radius-box" style="border-radius:6px"></div><div class="radius-label">--radius-sm (6px)</div></div>
+            <div class="radius-item"><div class="radius-box" style="border-radius:14px"></div><div class="radius-label">--radius-md (14px)</div></div>
+            <div class="radius-item"><div class="radius-box" style="border-radius:24px"></div><div class="radius-label">--radius-lg (24px)</div></div>
+            <div class="radius-item"><div class="radius-box" style="border-radius:40px"></div><div class="radius-label">--radius-xl (40px)</div></div>
+        </div>
+    </div>
+    <div class="sg-section">
+        <div class="sg-section-title">Shadows</div>
+        <div class="shadow-grid">
+            <div class="shadow-item"><div class="shadow-box" style="box-shadow:0 4px 24px rgba(92,61,46,0.10)"></div><div class="shadow-label">--shadow-soft</div></div>
+            <div class="shadow-item"><div class="shadow-box" style="box-shadow:0 2px 12px rgba(92,61,46,0.08)"></div><div class="shadow-label">--shadow-card</div></div>
+        </div>
+    </div>
+    <div class="sg-section">
+        <div class="sg-section-title">Transition</div>
+        <div class="transition-demo"><div class="transition-box"><div class="transition-label">Hover me</div></div></div>
+        <p style="margin-top:1rem;font-size:0.78rem;color:var(--light);font-family:monospace">0.25s cubic-bezier(0.4, 0, 0.2, 1)</p>
+    </div>
+</div>
+</body>
+</html>
