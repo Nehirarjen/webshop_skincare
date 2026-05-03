@@ -6,12 +6,48 @@
   <title>Bestellbestätigung — SUNA Korean Skincare</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .order-summary{border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin:16px 0;}
-    table{width:100%;border-collapse:collapse}
-    th,td{text-align:left;padding:8px;border-bottom:1px solid #eee}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-    @media (max-width: 800px){.two-col{grid-template-columns:1fr}}
-    .badge{display:inline-block;background:#eee;border-radius:4px;padding:2px 6px;margin-right:6px}
+    .order-success {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--cream);
+      border-radius: var(--radius-md);
+      margin: 2rem 0;
+    }
+    .order-success__icon {
+      width: 80px;
+      height: 80px;
+      background: var(--sage);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 1.5rem;
+    }
+    .order-success h1 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--bark);
+      margin-bottom: 1rem;
+    }
+    .order-success p {
+      color: var(--bark);
+      opacity: 0.8;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .order-note {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      color: var(--bark);
+      opacity: 0.7;
+    }
+    
   </style>
 </head>
 <body>
@@ -27,48 +63,38 @@
     </div>
   </header>
   <main class="container">
-    <h1>Bestellbestätigung</h1>
-    <p>Vielen Dank für Ihre Bestellung!</p>
-
-    <section class="order-summary" aria-label="Bestelldetails">
-      <table id="order-table" aria-label="Bestellübersicht">
-        <tr><th>Produkt</th><td id="pname">-</td></tr>
-        <tr><th>Preis</th><td id="pprice">-</td></tr>
-        <tr><th>Name</th><td id="pname-user">-</td></tr>
-        <tr><th>E-Mail</th><td id="pemail">-</td></tr>
-        <tr><th>Adresse</th><td id="paddress">-</td></tr>
-        <tr><th>PLZ</th><td id="plz">-</td></tr>
-        <tr><th>Ort</th><td id="pcity">-</td></tr>
-        <tr><th>Menge</th><td id="pqty">-</td></tr>
-      </table>
-    </section>
-
-    <p>Wenn eine Angabe fehlt, überprüfen Sie bitte Ihre Eingaben im zurückgelassenen Formular.</p>
+    <div class="order-success">
+      <div class="order-success__icon">✓</div>
+      <h1>Bestellung erfolgreich!</h1>
+      <p>Vielen Dank für Ihre Bestellung bei SUNA. Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.</p>
+      
+      <div class="order-note">
+        <strong>Hinweis:</strong> Da wir ein direktes Bestellformular verwenden, erhalten Sie eine Bestätigung per E-Mail, sobald wir Ihre Bestellung bearbeiten.
+      </div>
+      
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="products.html" class="btn-primary" style="display: inline-block;">Weiter einkaufen</a>
+      </div>
+      <div style="margin-top: 1rem; text-align: center;">
+        <a href="index.html" class="btn-outline" style="display: inline-block;">Zur Startseite</a>
+      </div>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand"><span class="logo">SUNA</span><p>Kuratiertes K-Beauty aus Seoul — die Schweiz.</p></div>
+      <div class="footer-brand"><span class="logo">SUNA</span><p>Kuratiertes K-Beauty aus Seoul — für die Schweiz.</p></div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="products.html">Alle Produkte</a>
+        <a href="brands.html">Marken</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="contact.html">Über uns</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
     </div>
+    <div class="footer-bottom"><span>© 2025 SUNA Korean Skincare</span></div>
   </footer>
-  <script>
-    // Very small JS to render GET params (name, email, address, etc.) into the page
-    function q(name){ const s = new URLSearchParams(window.location.search); return s.get(name) || ''; }
-    const product = q('product');
-    const price = q('price');
-    const name = q('name');
-    const email = q('email');
-    const address = q('address');
-    const plz = q('plz');
-    const city = q('city');
-    const qty = q('qty');
-    if(product){ document.getElementById('pname').textContent = product; }
-    if(price){ document.getElementById('pprice').textContent = price; }
-    if(name){ document.getElementById('pname-user').textContent = name; }
-    if(email){ document.getElementById('pemail').textContent = email; }
-    if(address){ document.getElementById('paddress').textContent = address; }
-    if(plz){ document.getElementById('plz').textContent = plz; }
-    if(city){ document.getElementById('pcity').textContent = city; }
-    if(qty){ document.getElementById('pqty').textContent = qty; }
-  </script>
 </body>
 </html>

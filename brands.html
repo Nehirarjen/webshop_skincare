@@ -640,19 +640,5 @@
     </div>
 </footer>
 
-<script>
-document.querySelectorAll('.product-card').forEach(function(card) {
-    var link = card.querySelector('.btn-ghost');
-    if (link) {
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', function(e) {
-            if (!e.target.classList.contains('btn-ghost')) {
-                window.location.href = link.getAttribute('href');
-            }
-        });
-    }
-});
-</script>
-
 </body>
 </html>
