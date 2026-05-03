@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail - Torriden Dive In Mask</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .product-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+    .product-image img { width: 100%; border-radius: 8px; }
+    .brand { color: #666; margin-bottom: 6px; }
+    .price { font-size: 24px; font-weight: bold; color: #2c3e50; margin: 8px 0; }
+    .description { line-height: 1.6; margin: 0 0 18px; }
+    .ingredients { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    .order-form { background: #fff; padding: 25px; border: 2px solid #e0e0e0; border-radius: 8px; }
+    .form-group { margin-bottom: 12px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 4px; }
+    .form-group input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    .btn-order { background: #2c3e50; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; width: 100%; }
+  </style>
+</head>
+<body>
+  <header><nav><div class="logo">SUNA</div><a href="/webshop_skincare/index.html">Home</a></nav></header>
+  <main class="container">
+    <div class="product-container">
+      <div class="product-image"><img src="https://torriden.us/cdn/shop/files/DIVEINMask10ea-1.jpg?v=1767591317" alt="DIVE IN Mask" /></div>
+      <div class="product-info">
+        <h1>DIVE IN Mask</h1>
+        <div class="brand">Marke: Torriden</div>
+        <div class="price">CHF 33.00</div>
+        <div class="description">Hydrating Sheet Mask mit 5D Hyaluronic Acid für intensive Feuchtigkeit und glatte Haut.</div>
+        <div class="ingredients"><h3>Wichtige Inhaltsstoffe</h3><ul><li>5D Hyaluronic Acid</li><li>Panthenol</li><li>Allantoin</li></ul><p><strong>Inhalt:</strong> 27 ml x 10 Stk</p></div>
+        <div class="order-form">
+          <h3>Direkt bestellen</h3>
+          <form action="../order-confirmation.html" method="GET">
+            <input type="hidden" name="product" value="Dive In Mask">
+            <input type="hidden" name="price" value="33.00">
+            <div class="form-group"><label>Name *</label><input name="name" required /></div>
+            <div class="form-group"><label>E-Mail *</label><input type="email" name="email" required /></div>
+            <div class="form-group"><label>Adresse *</label><input name="address" required /></div>
+            <div class="form-group"><label>PLZ *</label><input name="plz" required /></div>
+            <div class="form-group"><label>Ort *</label><input name="city" required /></div>
+            <div class="form-group"><label>Menge *</label><input type="number" name="qty" value="1" min="1" required /></div>
+            <button type="submit" class="btn-order">Jetzt bestellen</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="recommendations"><h2>Ähnliche Produkte</h2><div class="product-grid"></div></section>
+  </main>
+</body>
+</html>

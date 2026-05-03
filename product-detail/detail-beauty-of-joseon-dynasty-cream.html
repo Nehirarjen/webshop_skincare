@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail— Beauty of Joseon Dynasty Cream</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav-left">
+        <a href="/webshop_skincare/products.html">Produkte</a>
+        <a href="/webshop_skincare/brands.html">Marken</a>
+        <a href="/webshop_skincare/contact.html">Kontakt</a>
+      </nav>
+      <a href="/webshop_skincare/index.html" class="logo">SUNA</a>
+      <div class="nav-right"><span class="tagline">Korean Skincare</span></div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section product-detail-twocol" style="display:flex;gap:32px;align-items:center;">
+      <div class="product-detail-media" style="flex:1;min-width:280px;">
+        <img src="https://beautyofjoseon.com/cdn/shop/files/mo_7d47ae20-baed-479c-b159-7c9539c6d93e.webp?v=1768543720&w=500&q=80" alt="Dynasty Cream" style="max-width:100%;border-radius:6px;" />
+      </div>
+      <div class="product-detail-info" style="flex:1;min-width:280px;">
+        <span class="product-brand">Beauty of Joseon</span>
+        <h1>Dynasty Cream</h1>
+        <p class="product-price-large">CHF 42.00</p>
+        <p class="product-desc">Traditionelle Creme mit Ginseng und Royal Jelly für intensives Hautsmoothing.</p>
+        <div class="product-ingredients">
+          <h3>Schlüsselinhaltsstoffe</h3>
+          <div class="ingredient-tags">
+            <span class="ingredient-tag">Ginseng</span>
+            <span class="ingredient-tag">Royal Jelly</span>
+            <span class="ingredient-tag">Snail Mucin</span>
+          </div>
+        </div>
+        <form class="add-to-cart-form" action="/webshop_skincare/order-confirmation.html" method="get">
+          <div class="form-row"><div class="form-group"><label for="qty-dyn">Menge</label><input type="number" id="qty-dyn" name="qty" min="1" max="10" value="1" /></div></div>
+          <div class="form-row"><div class="form-group"><label for="name-dyn">Name</label><input type="text" id="name-dyn" name="name" required /></div>
+            <div class="form-group"><label for="email-dyn">E-Mail</label><input type="email" id="email-dyn" name="email" required /></div></div>
+          <div class="form-row"><div class="form-group"><label for="address-dyn">Adresse</label><input type="text" id="address-dyn" name="address" required /></div></div>
+          <div class="form-row"><div class="form-group"><label for="plz-dyn">PLZ</label><input type="text" id="plz-dyn" name="plz" required /></div>
+            <div class="form-group"><label for="city-dyn">Ort</label><input type="text" id="city-dyn" name="city" required /></div></div>
+          <input type="hidden" name="product" value="Beauty of Joseon Dynasty Cream" />
+          <input type="hidden" name="price" value="CHF 42.00" />
+          <button type="submit" class="btn-primary">Jetzt bestellen</button>
+        </form>
+      </div>
+    </section>
+    <section class="section" aria-label="Empfohlene Produkte">
+      <div class="section-header"><h2 class="section-title">Empfohlene Produkte</h2></div>
+      <div class="products-grid" style="display:flex;flex-wrap:wrap;gap:16px;">
+        <a class="rec-card" href="detail-beauty-of-joseon-green-plum-refreshing-cleanser.html"><img src="https://beautyofjoseon.com/cdn/shop/files/mo_e319f4f4-ea6e-4e26-8f7e-3b5dc9c98546.webp?v=1768543753&w=500&q=80" alt="Green Plum Refreshing Cleanser"/><span class="rec-brand">Beauty of Joseon</span><span class="rec-name">Green Plum Refreshing Cleanser</span></a>
+        <a class="rec-card" href="detail-beauty-of-joseon-relief-sun-rice-centella-spf50.html"><img src="https://beautyofjoseon.com/cdn/shop/files/relief-sunscreen-1-front.webp?v=1770603160&w=500&q=80" alt="Relief Sun SPF50+"/><span class="rec-brand">Beauty of Joseon</span><span class="rec-name">Relief Sun SPF50+</span></a>
+        <a class="rec-card" href="detail-torriden-dive-in-serum.html"><img src="https://torriden.us/cdn/shop/files/DIVEINSerum1_631ac0e3-a77b-422a-a806-bf34477cac19.jpg?v=1753346213&w=500&q=80" alt="DIVE IN Serum"/><span class="rec-brand">Torriden</span><span class="rec-name">DIVE IN Serum</span></a>
+        <a class="rec-card" href="detail-skin1004-madagascar-centella-ampoule.html"><img src="https://img01.ztat.net/article/spp-media-p1/6e1ebdeb671c468eaccfe1ebdad2ee6d/62a00df006004ae39ceca11cf051d527.jpg?imwidth=500&filter=packshot" alt="Centella Ampoule"/><span class="rec-brand">Skin1004</span><span class="rec-name">Madagascar Centella Ampoule</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><span>© 2025 SUNA Korean Skincare</span></div></footer>
+  </body>
+  </html>
