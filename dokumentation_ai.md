@@ -1,11 +1,11 @@
-# KI-Einsatz Dokumentation – Korean Skincare Webshop (PA03)
+# KI-Einsatz Dokumentation – SUNA Korean Skincare Webshop (PA03)
 
 ## Übersicht
 
 In diesem Projektauftrag habe ich zwei verschiedene KI-Tools eingesetzt:
 
 1. **Manus AI** – Hauptwerkzeug für die vollständige Generierung des Webshops (HTML, CSS, JS, Struktur, Inhalte)
-2. **OpenCode** – Nachbearbeitung und Konvertierung: TypeScript-Abhängigkeiten entfernen, reines HTML/CSS umsetzen
+2. **OpenCode** – Nachbearbeitung in zwei Phasen: TypeScript entfernen und reines HTML/CSS umsetzen, danach echte Produkte implementieren, CSS finalisieren und alle Projektanforderungen erfüllen
 
 ---
 
@@ -13,7 +13,7 @@ In diesem Projektauftrag habe ich zwei verschiedene KI-Tools eingesetzt:
 
 ### 1. Manus AI
 
-**Einsatzgebiet:** Vollständige Erstellung des Korean Skincare Webshops – Konzept, Seitenstruktur, HTML/CSS/JS-Generierung, Produktinhalte, responsives Design
+**Einsatzgebiet:** Vollständige Erstellung des SUNA Korean Skincare Webshops – Konzept, Seitenstruktur, HTML/CSS/JS-Generierung, Produktinhalte, responsives Design
 
 **Initialer Auftrag an Manus AI:**
 
@@ -23,61 +23,58 @@ In diesem Projektauftrag habe ich zwei verschiedene KI-Tools eingesetzt:
 
 | Aufgabe | Prompt-Ansatz | Ergebnis |
 |---|---|---|
-| Gesamtstruktur Webshop | Vollständiger Auftrag inkl. Sitemap und Anforderungen | Komplette Webshop-Struktur mit allen 4 Hauptseiten |
-| Startseite | Beschreibung: neue Produkte, Kategorieübersicht, Newsletter-Sektion | Hero-Bereich, Produktgrid, Kategorie-Cards, Newsletter-Formular |
-| Produktübersicht | Produktseite mit Kategoriefilter (alle / Toner / Serum / Moisturizer etc.) | Filterleiste mit JavaScript-Logik, Grid-Layout |
-| Produktdetailseite | Detailseite mit Bild, Beschreibung, Preis, Bestellformular | Zweispaltiges Layout, vollständiges Bestellformular |
-| Kontaktseite | Team-Vorstellung und Kontaktformular mit Betreff-Dropdown | Über-uns-Sektion, Formular mit mehreren Betreffoptionen |
-| 10+ Produkte | Koreanische Skincare-Produkte mit Namen, Beschreibung, Preis, Kategorie | 12 Produkte mit realistischen K-Beauty-Inhalten |
-| Responsives Design | Mobile 1-spaltig, Tablet 2-spaltig, Desktop 3–4-spaltig | Media Queries für alle Breakpoints |
-| Dark/Light Design | Konsistentes Farbsystem passend zu K-Beauty-Ästhetik | CSS Custom Properties mit zartem Rosa/Nude-Farbschema |
-| Navigation | Mehrsprachige Navigation zwischen allen Seiten | Konsistenter Header mit aktivem Link-Highlighting |
+| Gesamtstruktur Webshop | Vollständiger Auftrag inkl. Sitemap und Anforderungen | 5 Seiten: index.html, products.html, brands.html, contact.html, order-confirmation.html |
+| Startseite (index.html) | Hero, neue Produkte, Kategorieübersicht, Marken, Newsletter | Hero mit Bild, Marquee-Strip, 6 neue Produktkarten, Kategorie-Grid, Brands-Grid, Newsletter-Formular |
+| Produktübersicht (products.html) | Produktseite mit Kategoriefilter und Grid | Filterleiste mit 6 Kategorien, sektionsbasierter Aufbau pro Kategorie |
+| Marken-Seite (brands.html) | Übersichtsseite für alle Brands des Shops | Eigenständige Markenseite mit Brand-Profilen |
+| Kontaktseite (contact.html) | Team-Vorstellung, Werte, Kontaktformular mit Betreff-Dropdown | Über-uns-Text, Values-Strip (4 Werte), Formular mit 7 Betreff-Optionen |
+| Bestellbestätigung | Bestätigungsseite nach Kauf | Eigene order-confirmation.html mit Erfolgs-Feedback |
+| Design-System | Konsistentes K-Beauty-Branding | CSS Custom Properties, Fonts: Cormorant Garamond + DM Sans, zweisprachige Labels (DE/KO) |
+| Navigation | Konsistenter Header über alle Seiten | Logo «SUNA», Nav-Links mit aktivem Zustand pro Seite |
 
 **Stärken von Manus AI:**
-- Generiert einen vollständigen, funktionsfähigen Webshop in einem Durchgang
+- Generiert einen vollständigen, deployablen Webshop in einem Durchgang
 - Versteht komplexe, mehrteilige Aufträge mit vielen Anforderungen
-- Erstellt konsistente Inhalte (Produkttexte, Preise, Kategorien) passend zum Thema
-- Setzt visuelles Design eigenständig um (Farben, Typografie, Abstände)
-- Produziert direkt deploybare Dateien ohne manuelle Nacharbeit
+- Setzt visuelles Design eigenständig um – inkl. thematisch passenden Details wie koreanischen Schriftzeichen (한국어) als Dekorationselement
+- Erstellt konsistente Seitenstruktur mit Header, Main, Footer auf allen Seiten
 
 **Schwächen von Manus AI:**
 - Generiert manchmal TypeScript oder moderne Build-Tool-Abhängigkeiten, die nicht gewünscht sind
-- Weniger geeignet für kleinteilige Anpassungen und Iterationen
-- Kein direkter Editor-Kontext – Änderungen erfordern neue Aufträge
+- Produktinhalte waren initial Platzhalter – echte Marken und Produkte mussten manuell nachgetragen werden
+- Weniger geeignet für kleinteilige Anpassungen und Iterationen nach der Generierung
 
 ---
 
 ### 2. OpenCode
 
-**Einsatzgebiet:** Nachbearbeitung des von Manus AI generierten Codes – Entfernung von TypeScript, Konvertierung zu reinem HTML/CSS ohne externe Abhängigkeiten
+**Einsatzgebiet:** Nachbearbeitung des von Manus AI generierten Codes in zwei Phasen
 
-**Einsatz in zwei Phasen:**
+**Phase 1 – Technische Bereinigung:** Umwandlung in reines HTML/CSS ohne TypeScript
 
-**Phase 1 – Konvertierung:** Umwandlung des Manus-AI-Outputs in reines HTML/CSS ohne TypeScript
-
-**Phase 2 – Weiterentwicklung:** Implementierung echter Produkte, CSS-Feinabstimmung und Erfüllung aller Projektanforderungen
+**Phase 2 – Inhaltliche Fertigstellung:** Echte Produkte implementieren, CSS verfeinern, alle Projektanforderungen erfüllen
 
 **Konkrete Nutzung:**
 
 | Aufgabe | Wie eingesetzt | Ergebnis |
 |---|---|---|
-| TypeScript entfernen | TypeScript-Dateien (.ts) in reines JavaScript (.js) umgewandelt | Keine Build-Steps mehr nötig, direkt im Browser lauffähig |
-| Abhängigkeiten bereinigen | Import-Statements und Modul-Syntax entfernt | Standalone HTML-Dateien ohne npm/Bundler |
-| Echte Produkte implementieren | Reale koreanische Skincare-Produkte mit echten Namen, Beschreibungen, Bildern und Preisen eingebaut | Authentische Produktdaten statt Platzhalter |
-| CSS anpassen | Design iterativ verfeinert – Abstände, Farben, Typografie, Hover-Effekte | Visuell konsistentes und ansprechendes Endprodukt |
-| Anforderungen erfüllen | Fehlende Pflichtfunktionen ergänzt (z. B. Kategoriefilter, Bestellformular, Newsletter, Kontaktformular mit Dropdown) | Alle Projektanforderungen vollständig umgesetzt |
-| Responsiveness sicherstellen | Media Queries geprüft und angepasst für Mobile, Tablet und Desktop | Funktioniert auf allen Geräten korrekt |
+| TypeScript entfernen | TypeScript-Abhängigkeiten eliminiert, Code zu reinem JS/HTML konvertiert | Direkt im Browser lauffähig, kein Build-Step nötig |
+| Echte Marken & Produkte einbauen | Reale K-Beauty-Marken (Torriden, ANUA, Beauty of Joseon, Skin1004, Medicube, COSRX, ROUND LAB, heimish u. a.) mit echten Produktnamen, Bildern und Preisen implementiert | Authentischer Shop statt Platzhalterdaten |
+| Produktkategorien befüllen | 6 Kategorien aufgebaut: Cleanser, Toner, Serum & Essenz, Masken, Feuchtigkeitscreme, Sonnenschutz | Alle Kategorien mit je mehreren echten Produkten befüllt |
+| Produktdetailseiten erstellen | Für jedes Produkt eine eigene Detailseite im Ordner product-detail/ | Detailseiten mit Bild, Beschreibung, Preis und Bestellformular |
+| CSS verfeinern | Abstände, Hover-Effekte, Badge-Styles, Formular-Styling angepasst | Visuell poliertes Endprodukt passend zur K-Beauty-Ästhetik |
+| Brands-Seite ausbauen | Markenprofile mit echten Brand-Informationen und Produktbildern ergänzt | Vollständige brands.html mit realen Markenprofilen |
+| Anforderungen sicherstellen | Fehlende Pflichtfunktionen geprüft und ergänzt: Kategoriefilter, Bestellformular, Newsletter, Kontaktformular mit Dropdown | Alle Projektanforderungen vollständig umgesetzt |
 
 **Stärken von OpenCode:**
-- Sehr effizient bei klar definierten Code-Umstrukturierungen
-- Gut geeignet für iterative Verbesserungen direkt im Code
-- Behält bestehende Struktur bei und ergänzt gezielt fehlende Teile
-- Praktisch für die Feinabstimmung von CSS ohne die Grundstruktur zu brechen
+- Effizient bei gezielten Code-Änderungen und Ergänzungen im bestehenden Projekt
+- Gut geeignet für iterative Verbesserungen direkt am Code
+- Behält die bestehende Struktur bei und ergänzt präzise die fehlenden Teile
+- Praktisch für die Feinabstimmung von CSS ohne die Grundstruktur zu verändern
 
 **Schwächen von OpenCode:**
 - Weniger geeignet für konzeptionelle Aufgaben oder Neuentwicklungen von Grund auf
-- Benötigt klaren, spezifischen Auftrag – vage Anweisungen führen zu unvollständigen Ergebnissen
-- Kein kontextuelles Verständnis des gesamten Projekts wie ein Chat-basiertes Tool
+- Braucht präzise Aufträge – vage Anweisungen führen zu unvollständigen Ergebnissen
+- Kein übergreifendes Kontextverständnis des gesamten Projekts
 
 ---
 
@@ -91,10 +88,10 @@ In diesem Projektauftrag habe ich zwei verschiedene KI-Tools eingesetzt:
 | **Erklärungen** | ★★★☆☆ | ★★☆☆☆ |
 | **Debugging** | ★★★☆☆ | ★★★★☆ |
 | **Ganzheitliche Projekte** | ★★★★★ | ★★☆☆☆ |
-| **Technische Bereinigung** | ★★☆☆☆ | ★★★★★ |
+| **Iterative Verbesserungen** | ★★☆☆☆ | ★★★★★ |
 | **Neues lernen** | ★★★☆☆ | ★★☆☆☆ |
 
-**Fazit:** Manus AI war das Hauptwerkzeug für die initiale Erstellung des Webshops – es hat den komplexen Auftrag ganzheitlich verstanden und eine vollständige Grundstruktur geliefert. OpenCode hat in zwei Phasen weitergearbeitet: zuerst die technische Bereinigung (kein TypeScript, reines HTML/CSS), dann die inhaltliche und visuelle Fertigstellung mit echten Produkten, CSS-Anpassungen und der Umsetzung aller Projektanforderungen. Die Kombination funktioniert als sinnvolle Staffelung: Manus AI für den schnellen, vollständigen Einstieg – OpenCode für die iterative Verfeinerung bis zum fertigen Produkt.
+**Fazit:** Manus AI lieferte den vollständigen Webshop-Rahmen in einem Durchgang – Seitenstruktur, Design-System, Navigation und alle Pflichtseiten (index.html, products.html, brands.html, contact.html, order-confirmation.html). OpenCode übernahm danach in zwei Phasen: zuerst die technische Bereinigung (kein TypeScript, reines HTML/CSS), dann die inhaltliche Fertigstellung mit echten K-Beauty-Marken wie Torriden, ANUA, Beauty of Joseon und Skin1004, CSS-Verfeinerungen und der vollständigen Umsetzung aller Projektanforderungen. Die Kombination funktioniert als klare Staffelung: Manus AI für den vollständigen Einstieg, OpenCode für die iterative Verfeinerung bis zum fertigen Produkt.
 
 ---
 
@@ -108,17 +105,17 @@ Ich habe die Tools nach folgenden selbst definierten Kriterien bewertet:
 4. **Erklärungen** – Erklärt das Tool seine Entscheidungen und den generierten Code?
 5. **Debugging-Unterstützung** – Kann das Tool Fehler im Code erkennen und beheben?
 6. **Eignung für Gesamtprojekte** – Kann das Tool ein komplettes Projekt eigenständig generieren?
-7. **Technische Bereinigung** – Wie gut ist das Tool bei gezielten Code-Umstrukturierungen?
+7. **Iterative Verbesserungen** – Wie gut ist das Tool bei schrittweisen Anpassungen an bestehendem Code?
 
 ---
 
 ## Learnings
 
-- Manus AI eignet sich hervorragend für Aufträge, bei denen ein vollständiges Ergebnis in einem Schritt gewünscht ist – der Prompt muss aber präzise und vollständig sein
-- Vage Aufträge wie «mach einen Webshop» führen zu schlechteren Ergebnissen als detaillierte Beschreibungen mit Sitemap, Anforderungen und Designvorgaben
-- KI-generierter Code erfüllt nicht immer alle technischen Anforderungen (z. B. kein TypeScript) – eine Nachbearbeitung mit einem spezialisierten Tool wie OpenCode ist oft sinnvoll
-- Wer den generierten Code nicht versteht, kann ihn nicht anpassen oder debuggen – das eigene Grundverständnis von HTML/CSS bleibt unverzichtbar
-- Die Kombination zweier Tools mit klarer Aufgabenteilung (Generierung + Bereinigung) ist effizienter als alles mit einem Tool zu lösen
+- Manus AI eignet sich hervorragend, wenn ein vollständiges Projekt in einem Schritt generiert werden soll – der initiale Prompt muss aber präzise und vollständig sein, inkl. Sitemap, Anforderungen und Thema
+- KI-generierter Code enthält nicht immer echte Inhalte – Platzhalterprodukte durch reale Marken wie Torriden, ANUA oder Beauty of Joseon zu ersetzen erforderte eine eigene Nachbearbeitungsphase mit OpenCode
+- Technische Einschränkungen wie «kein TypeScript» müssen explizit formuliert werden – andernfalls generiert die KI modernere Stack-Lösungen, die nicht den Anforderungen entsprechen
+- Die Kombination zweier Tools mit klarer Aufgabenteilung (Generierung + Nachbearbeitung) ist effizienter als alles mit einem Tool lösen zu wollen
+- Wer den generierten Code nicht versteht, kann ihn nicht anpassen – ein Grundverständnis von HTML und CSS bleibt unverzichtbar
 
 ---
 
@@ -126,9 +123,10 @@ Ich habe die Tools nach folgenden selbst definierten Kriterien bewertet:
 
 | Technik | Beispiel |
 |---|---|
-| **Vollständiger Briefing-Prompt** | Alle Anforderungen, Seiten und Funktionen in einem strukturierten Auftrag übergeben |
+| **Vollständiger Briefing-Prompt** | Alle Anforderungen, Seiten und Funktionen in einem strukturierten Auftrag an Manus AI übergeben |
 | **Constraint-Prompting** | «100% eigener HTML- und CSS-Code, keine Frameworks» |
-| **Sitemap als Struktur** | Sitemap direkt im Prompt mitgegeben, damit die Navigation korrekt aufgebaut wird |
-| **Thematische Vorgabe** | «Korean Skincare / K-Beauty» als Kontext für Produktinhalte und Design-Ästhetik |
+| **Sitemap als Struktur** | Sitemap direkt im Prompt mitgegeben für korrekte Navigation und Seitenstruktur |
+| **Thematische Vorgabe** | «Korean Skincare / K-Beauty» als Kontext für Design, Inhalte und Markenwahl |
 | **Negativ-Constraint** | «ohne TypeScript» als klare Einschränkung für die Nachbearbeitung mit OpenCode |
-| **Aufgabentrennung** | Generierung (Manus AI) und technische Bereinigung (OpenCode) bewusst getrennt |
+| **Phasen-Prompting** | Generierung und Verfeinerung bewusst in separate Aufträge und Tools aufgeteilt |
+| **Inhalts-Spezifikation** | Konkrete Marken und Produktnamen (z. B. «Torriden DIVE IN Serum», «Beauty of Joseon Relief Sun SPF50+») vorgegeben für authentische Produktdaten |
