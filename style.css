@@ -1189,6 +1189,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* ── Product Detail Page ─────────────────────────────────────── */
+
 .product-link-card {
     display: flex;
     flex-direction: column;
@@ -1341,6 +1342,89 @@ html { scroll-behavior: smooth; }
     }
     .product-detail-info h1 {
         font-size: 1.8rem;
+    }
+}
+
+/* Product Detail Page - Mobile Reorder */
+@media (max-width: 640px) {
+    .product-detail-twocol {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        padding: 1.5rem 1rem !important;
+    }
+    .product-detail-twocol > * {
+        width: 100% !important;
+        flex: none !important;
+        min-width: 0 !important;
+    }
+    .product-detail-twocol > div {
+        display: contents;
+    }
+    .product-detail-media {
+        order: 2;
+        width: 100% !important;
+    }
+    .product-detail-media img {
+        border-radius: var(--radius-md);
+    }
+    .product-detail-info {
+        display: contents;
+    }
+    .product-detail-info > * {
+        width: 100% !important;
+        flex: none !important;
+        min-width: 0 !important;
+    }
+    .product-brand,
+    .product-detail-info > h1 {
+        order: 1;
+    }
+    .product-detail-info > h1 {
+        font-size: 1.6rem;
+    }
+    .product-price-large {
+        order: 1;
+        font-size: 1.4rem;
+    }
+    .product-desc {
+        order: 3;
+    }
+    .product-ingredients {
+        order: 5;
+        margin: 0.5rem 0;
+    }
+    .add-to-cart-form {
+        order: 4;
+        padding: 1rem;
+        width: 100% !important;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .form-group {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section.product-detail-twocol {
+        padding: 1.5rem 1rem;
+    }
+    .product-ingredients h3 {
+        font-size: 0.8rem;
+    }
+    .ingredient-tags {
+        gap: 0.3rem;
+    }
+    .ingredient-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+    .btn-primary {
+        width: 100%;
+        text-align: center;
     }
 }
 
